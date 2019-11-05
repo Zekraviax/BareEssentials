@@ -1,0 +1,74 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 30,
+                    "name": "bareessentials:rock"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:coal"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:copper_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:iron_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:nickel_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:gold_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "bareessentials:silver_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:uranium_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:lead_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:manganese_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:diamond"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:emerald"
+                },
+				{
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:fossil"
+                }
+            ]
+        }
+    ]
+}
