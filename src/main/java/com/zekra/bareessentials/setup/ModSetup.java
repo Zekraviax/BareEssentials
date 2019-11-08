@@ -10,12 +10,11 @@ public class ModSetup {
 	public ItemGroup bareEssentialsItemGroup = new ItemGroup("bareessentials") {
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(ModBlocks.BASALT);
+			return new ItemStack(ModBlocks.AMETHYST_BLOCK);
 		}
 	};
 	
 	public void init() {
 
 	}
-
 }

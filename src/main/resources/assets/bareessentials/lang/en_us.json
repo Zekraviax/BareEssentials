@@ -90,7 +90,8 @@
 	"item.bareessentials.wax_flake_white": "White Wax Flake",
 	"item.bareessentials.wax_flake_yellow": "Yellow Wax Flake",
 	
-		"block.bareessentials.wax_block_black": "Black Wax Block",
+	
+	"block.bareessentials.wax_block_black": "Black Wax Block",
 	"block.bareessentials.wax_block_blue": "Blue Wax Block",
 	"block.bareessentials.wax_block_brown": "Brown Wax Block",
 	"block.bareessentials.wax_block_cream": "Cream Wax Block",
@@ -107,6 +108,9 @@
 	"block.bareessentials.wax_block_red": "Red Wax Block",
 	"block.bareessentials.wax_block_white": "White Wax Block",
 	"block.bareessentials.wax_block_yellow": "Yellow Wax Block",
+	
+	
+	"item.bareessentials.liquid_wax_bucket": "Liquid Wax Bucket",
 	
 	
 	"biome.bareessentials.outback_test": "Outback Test",

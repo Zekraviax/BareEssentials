@@ -9,6 +9,7 @@ import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
 import com.zekra.bareessentials.blocks.EssentialOre;
 import com.zekra.bareessentials.blocks.ModBlocks;
 import com.zekra.bareessentials.blocks.WaxBlock;
+import com.zekra.bareessentials.fluid.LiquidWax;
 import com.zekra.bareessentials.items.EssentialGemstone;
 import com.zekra.bareessentials.items.EssentialOreChunk;
 import com.zekra.bareessentials.items.ModItems;
@@ -21,6 +22,7 @@ import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -34,9 +36,15 @@ public class BareEssentials {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static ModSetup setup = new ModSetup();
 		
-	public BareEssentials() {
+	public BareEssentials() {	
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 			
+		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		
+		LiquidWax.BLOCKS.register(modEventBus);
+		LiquidWax.ITEMS.register(modEventBus);
+		LiquidWax.FLUIDS.register(modEventBus);
+		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 		
