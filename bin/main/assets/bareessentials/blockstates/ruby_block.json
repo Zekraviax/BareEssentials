@@ -1,0 +1,6 @@
+{
+    "variants": 
+	{
+        "": { "model": "bareessentials:block/ruby_block" }
+    }
+}

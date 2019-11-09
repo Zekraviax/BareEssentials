@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 30,
+                    "name": "bareessentials:rock"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:iron_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:nickel_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:gold_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:aluminium_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:manganese_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:zinc_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:amethyst"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:garnet"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:olivine"
+                }
+            ]
+        }
+    ]
+}

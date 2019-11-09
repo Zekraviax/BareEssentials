@@ -3,6 +3,7 @@ package com.zekra.bareessentials.blocks;
 import net.minecraft.block.Block;
 import net.minecraftforge.registries.ObjectHolder;
 
+@ObjectHolder("bareessentials")
 public class ModBlocks {
 	// Ore
 	@ObjectHolder("bareessentials:basalt")
@@ -83,4 +84,7 @@ public class ModBlocks {
 	public static Block WAX_BLOCK_WHITE;
 	@ObjectHolder("bareessentials:wax_block_yellow")
 	public static Block WAX_BLOCK_YELLOW;
+	
+	// Liquid Blocks
+	public static final Block LIQUID_WAX_BLOCK = null;
 }

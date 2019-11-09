@@ -3,11 +3,10 @@ package com.zekra.bareessentials.fluid;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraftforge.registries.ObjectHolder;
 
+@ObjectHolder("bareessentials")
 public class ModFluids {
-	// Still
-	@ObjectHolder("bareessentials:still_wax")
-	public static final FlowingFluid STILL_WAX = null;
-	// Flowing
-	@ObjectHolder("bareessentials:flowing_wax")
-	public static final FlowingFluid FLOWING_WAX = null;
+	// Still Liquid
+	public static final FlowingFluid LIQUID_WAX = null;
+	// Flowing Liquid
+	public static final FlowingFluid LIQUID_WAX_FLOWING = null;
 }

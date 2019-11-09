@@ -9,7 +9,7 @@ import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
 import com.zekra.bareessentials.blocks.EssentialOre;
 import com.zekra.bareessentials.blocks.ModBlocks;
 import com.zekra.bareessentials.blocks.WaxBlock;
-import com.zekra.bareessentials.fluid.LiquidWax;
+import com.zekra.bareessentials.fluid.LiquidRegistry;
 import com.zekra.bareessentials.items.EssentialGemstone;
 import com.zekra.bareessentials.items.EssentialOreChunk;
 import com.zekra.bareessentials.items.ModItems;
@@ -41,11 +41,11 @@ public class BareEssentials {
 			
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		
-		LiquidWax.BLOCKS.register(modEventBus);
-		LiquidWax.ITEMS.register(modEventBus);
-		LiquidWax.FLUIDS.register(modEventBus);
-		
 		MinecraftForge.EVENT_BUS.register(this);
+		
+		LiquidRegistry.BLOCKS.register(modEventBus);
+		LiquidRegistry.ITEMS.register(modEventBus);
+		LiquidRegistry.FLUIDS.register(modEventBus);
 	}
 		
 	public void setup(final FMLCommonSetupEvent event) {

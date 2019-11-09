@@ -1,0 +1,44 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 30,
+                    "name": "bareessentials:rock"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "bareessentials:gold_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:silver_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "bareessentials:platinum_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "bareessentials:tungsten_chunk"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "bareessentials:amethyst"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:lapis_lazuli"
+                }
+            ]
+        }
+    ]
+}
