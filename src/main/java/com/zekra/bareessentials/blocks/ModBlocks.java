@@ -86,5 +86,21 @@ public class ModBlocks {
 	public static Block WAX_BLOCK_YELLOW;
 	
 	// Liquid Blocks
-	public static final Block LIQUID_WAX_BLOCK = null;
+	public static final Block LIQUID_WAX_BLOCK_BLACK = null;
+	public static final Block LIQUID_WAX_BLOCK_BLUE = null;
+	public static final Block LIQUID_WAX_BLOCK_BROWN = null;
+	public static final Block LIQUID_WAX_BLOCK_CREAM = null;
+	public static final Block LIQUID_WAX_BLOCK_CYAN = null;
+	public static final Block LIQUID_WAX_BLOCK_GRAY = null;
+	public static final Block LIQUID_WAX_BLOCK_GREEN = null;
+	public static final Block LIQUID_WAX_BLOCK_LIGHT_BLUE = null;
+	public static final Block LIQUID_WAX_BLOCK_LIGHT_GRAY = null;
+	public static final Block LIQUID_WAX_BLOCK_LIME = null;
+	public static final Block LIQUID_WAX_BLOCK_MAGENTA = null;
+	public static final Block LIQUID_WAX_BLOCK_ORANGE = null;
+	public static final Block LIQUID_WAX_BLOCK_PINK = null;
+	public static final Block LIQUID_WAX_BLOCK_PURPLE = null;
+	public static final Block LIQUID_WAX_BLOCK_RED = null;
+	public static final Block LIQUID_WAX_BLOCK_WHITE = null;
+	public static final Block LIQUID_WAX_BLOCK_YELLOW = null;
 }

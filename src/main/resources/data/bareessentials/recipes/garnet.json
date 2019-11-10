@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:garnet_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:garnet",
+    "count": 9
+  }
+}

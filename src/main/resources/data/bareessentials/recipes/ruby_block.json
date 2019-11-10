@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "bareessentials:ruby"
+    }
+  },
+  "result": {
+    "item": "bareessentials:ruby_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:turquoise_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:turquoise",
+    "count": 9
+  }
+}

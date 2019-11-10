@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:emerald_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:emerald",
+    "count": 9
+  }
+}

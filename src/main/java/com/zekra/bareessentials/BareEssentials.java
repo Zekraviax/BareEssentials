@@ -11,6 +11,7 @@ import com.zekra.bareessentials.blocks.ModBlocks;
 import com.zekra.bareessentials.blocks.WaxBlock;
 import com.zekra.bareessentials.fluid.LiquidRegistry;
 import com.zekra.bareessentials.items.EssentialGemstone;
+import com.zekra.bareessentials.items.EssentialKnife;
 import com.zekra.bareessentials.items.EssentialOreChunk;
 import com.zekra.bareessentials.items.ModItems;
 import com.zekra.bareessentials.items.WaxFlake;
@@ -19,6 +20,7 @@ import com.zekra.bareessentials.setup.ModSetup;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemTier;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -183,6 +185,8 @@ public class BareEssentials {
 				ModItems.TURQUOISE = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("turquoise"),
 				
 				// Knives
+				//event.getRegistry().register(ModItems.stone_knife = new Knife(ItemTier.STONE, 1, 8.5f, properties));
+				new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),
 				
 				// Wax Blocks
 				new BlockItem(ModBlocks.WAX_BLOCK_BLACK, properties).setRegistryName("wax_block_black"),

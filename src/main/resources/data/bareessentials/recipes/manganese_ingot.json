@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": { 
+		"item": "bareessentials:manganese_chunk" 
+	},
+	"result": "bareessentials:manganese_ingot"
+}

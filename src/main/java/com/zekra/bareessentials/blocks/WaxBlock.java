@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.util.Constants;
 
 public class WaxBlock extends Block {
 
@@ -30,8 +31,12 @@ public class WaxBlock extends Block {
 				worldIn.getBlockState(fromPos) == Blocks.LANTERN.getDefaultState() ||
 				// Campfires need to check for a special state
 				worldIn.getBlockState(fromPos) == Blocks.CAMPFIRE.getDefaultState()) {
+			
 			System.out.println("Hello: Found a neighbouring heat source.");
-		} else {
+			Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_WHITE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+		} 
+		else 
+		{
 			System.out.println("Hello: Neighbour is a: " + worldIn.getBlockState(fromPos).toString());
 		}
 	}

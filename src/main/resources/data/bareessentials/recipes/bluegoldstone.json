@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:bluegoldstone_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:bluegoldstone",
+    "count": 9
+  }
+}

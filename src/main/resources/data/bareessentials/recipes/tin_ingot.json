@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": { 
+		"item": "bareessentials:tin_chunk" 
+	},
+	"result": "bareessentials:tin_ingot"
+}

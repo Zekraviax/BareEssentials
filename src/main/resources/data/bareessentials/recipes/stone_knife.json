@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y",
+    "X "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stick"
+    },
+	"Y": {
+	  "item": "bareessentials:rock"
+	}
+  },
+  "result": {
+    "item": "bareessentials:stone_knife"
+  }
+}
