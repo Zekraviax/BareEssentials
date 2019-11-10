@@ -29,15 +29,57 @@ public class WaxBlock extends Block {
 				worldIn.getBlockState(fromPos) == Blocks.GLOWSTONE.getDefaultState() ||
 				worldIn.getBlockState(fromPos) == Blocks.TORCH.getDefaultState() ||
 				worldIn.getBlockState(fromPos) == Blocks.LANTERN.getDefaultState() ||
-				// Campfires need to check for a special state
+				// Campfires need to check for a special state/multiple states
 				worldIn.getBlockState(fromPos) == Blocks.CAMPFIRE.getDefaultState()) {
 			
-			System.out.println("Hello: Found a neighbouring heat source.");
-			Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_WHITE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
-		} 
+			//System.out.println("Hello: Found a neighbouring heat source.");
+			//System.out.println("Hello: Wax block is: " + state.toString());
+			
+			// Switch statements don't work on BlockState variables
+			if (state == ModBlocks.WAX_BLOCK_BLACK.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_BLACK.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_BLUE.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_BLUE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_BROWN.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_BROWN.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_CREAM.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_CREAM.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_CYAN.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_CYAN.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_GRAY.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_GRAY.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_GREEN.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_GREEN.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_LIGHT_BLUE.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_LIGHT_BLUE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_LIGHT_GRAY.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_LIGHT_GRAY.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_LIME.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_LIME.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_MAGENTA.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_MAGENTA.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_ORANGE.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_ORANGE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_PINK.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_PINK.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_PURPLE.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_PURPLE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_RED.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_RED.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_WHITE.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_WHITE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else if (state == ModBlocks.WAX_BLOCK_YELLOW.getDefaultState()) {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_YELLOW.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			} else {
+				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_WHITE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
+			}
+		}
+		
+		/*
 		else 
 		{
 			System.out.println("Hello: Neighbour is a: " + worldIn.getBlockState(fromPos).toString());
 		}
+		*/
 	}
 }
