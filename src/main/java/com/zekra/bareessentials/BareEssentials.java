@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.zekra.bareessentials.biomes.EssentialBiomes;
 import com.zekra.bareessentials.biomes.OutbackTest;
+import com.zekra.bareessentials.blocks.EssentialCrystal;
 import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
 import com.zekra.bareessentials.blocks.EssentialOre;
 import com.zekra.bareessentials.blocks.ModBlocks;
@@ -15,18 +16,34 @@ import com.zekra.bareessentials.items.EssentialKnife;
 import com.zekra.bareessentials.items.EssentialOreChunk;
 import com.zekra.bareessentials.items.ModItems;
 import com.zekra.bareessentials.items.WaxFlake;
+import com.zekra.bareessentials.items.tiers.Essential_ItemTiers;
 import com.zekra.bareessentials.setup.ModSetup;
+import com.zekra.bareessentials.world.OreGeneration;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.model.IBakedModel;
+import net.minecraft.client.renderer.model.IUnbakedModel;
+import net.minecraft.client.renderer.model.ModelResourceLocation;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
+import net.minecraftforge.client.event.ModelBakeEvent;
+import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.client.model.BasicState;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.model.ModelLoaderRegistry;
+import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.client.model.obj.OBJModel;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -40,6 +57,7 @@ public class BareEssentials {
 		
 	public BareEssentials() {	
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 			
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		
@@ -51,15 +69,21 @@ public class BareEssentials {
 	}
 		
 	public void setup(final FMLCommonSetupEvent event) {
-		//OreGeneration.SetupOreGeneration();
+		OreGeneration.SetupOreGeneration();
 		setup.init();
 			
 		//LOGGER.info("Logger: OreGen complete!");
 		//proxy.init();
 	}
 	
+	private void doClientStuff(final FMLClientSetupEvent event) {
+		OBJLoader.INSTANCE.addDomain("bareessentials");
+	}
+
+	
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegistryEvents {
+		
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event)
 		{
@@ -106,7 +130,10 @@ public class BareEssentials {
 				ModBlocks.WAX_BLOCK_PURPLE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_purple"),
 				ModBlocks.WAX_BLOCK_RED = new WaxBlock().setRegistryName(MOD_ID, "wax_block_red"),
 				ModBlocks.WAX_BLOCK_WHITE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_white"),
-				ModBlocks.WAX_BLOCK_YELLOW = new WaxBlock().setRegistryName(MOD_ID, "wax_block_yellow")
+				ModBlocks.WAX_BLOCK_YELLOW = new WaxBlock().setRegistryName(MOD_ID, "wax_block_yellow"),
+				
+				// Crystal Blocks
+				ModBlocks.SCHEELITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "scheelite_crystal")
 			);
 		}
 	
@@ -185,8 +212,11 @@ public class BareEssentials {
 				ModItems.TURQUOISE = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("turquoise"),
 				
 				// Knives
-				//event.getRegistry().register(ModItems.stone_knife = new Knife(ItemTier.STONE, 1, 8.5f, properties));
 				new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),
+				
+				// Tools
+				//Items.DIAMOND_PICKAXE
+				ModItems.TITANIUM_PICKAXE = (PickaxeItem) new PickaxeItem(Essential_ItemTiers.TITANIUM, 0, 0.f, properties).setRegistryName("titanium_pickaxe"),
 				
 				// Wax Blocks
 				new BlockItem(ModBlocks.WAX_BLOCK_BLACK, properties).setRegistryName("wax_block_black"),
@@ -226,6 +256,9 @@ public class BareEssentials {
 				ModItems.WAX_FLAKE_WHITE = (WaxFlake) new WaxFlake(properties).setRegistryName("wax_flake_white"),
 				ModItems.WAX_FLAKE_YELLOW = (WaxFlake) new WaxFlake(properties).setRegistryName("wax_flake_yellow"),
 				
+				// Crystal BlockItems
+				new BlockItem(ModBlocks.SCHEELITE_CRYSTAL, properties).setRegistryName("scheelite_crystal"),
+				
 				// Trees and Wood
 				
 				// Other
@@ -242,5 +275,25 @@ public class BareEssentials {
 				EssentialBiomes.OutbackTestBiome = new OutbackTest().setRegistryName("outback_test")
 			);
 		}
+		
+		@SubscribeEvent
+		public static void onModelBakeEvent(ModelBakeEvent event) {
+			try {
+				IUnbakedModel crystalFive = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystalfive.obj"));
+
+				if (crystalFive instanceof OBJModel) {
+					IBakedModel bakedModel = crystalFive.bake(event.getModelLoader(), ModelLoader.defaultTextureGetter(), new BasicState(crystalFive.getDefaultState(), false), DefaultVertexFormats.POSITION_TEX_COLOR_NORMAL);
+					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal", ""), bakedModel);
+					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal", "inventory"), bakedModel);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+	    @SubscribeEvent
+	    public static void onPreTextureStitch(TextureStitchEvent.Pre event) {
+	        event.addSprite(ResourceLocation.tryCreate("bareessentials:block/scheelite"));
+	    }
 	}
 }

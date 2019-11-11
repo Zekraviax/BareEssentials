@@ -1,7 +1,9 @@
 package com.zekra.bareessentials.items;
 
+import net.minecraft.item.PickaxeItem;
 import net.minecraftforge.registries.ObjectHolder;
 
+@ObjectHolder("bareessentials")
 public class ModItems {
 	// Ore Chunks
 	@ObjectHolder("bareessentials:aluminium_chunk")
@@ -120,6 +122,11 @@ public class ModItems {
 	public static WaxFlake WAX_FLAKE_WHITE;
 	@ObjectHolder("bareessentials:wax_flake_yellow")
 	public static WaxFlake WAX_FLAKE_YELLOW;
+	
+	// Tools
+	// TItanium
+	public static PickaxeItem TITANIUM_PICKAXE;
+	
 	
 	// Other
 	@ObjectHolder("bareessentials:fossil")

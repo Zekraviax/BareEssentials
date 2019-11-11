@@ -103,4 +103,7 @@ public class ModBlocks {
 	public static final Block LIQUID_WAX_BLOCK_RED = null;
 	public static final Block LIQUID_WAX_BLOCK_WHITE = null;
 	public static final Block LIQUID_WAX_BLOCK_YELLOW = null;
+	
+	// Crystals
+	public static Block SCHEELITE_CRYSTAL;
 }
