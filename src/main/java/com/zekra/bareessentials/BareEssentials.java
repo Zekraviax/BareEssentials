@@ -24,7 +24,6 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.model.IBakedModel;
 import net.minecraft.client.renderer.model.IUnbakedModel;
 import net.minecraft.client.renderer.model.ModelResourceLocation;
-import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -73,6 +72,8 @@ public class BareEssentials {
 	public void setup(final FMLCommonSetupEvent event) {
 		OreGeneration.SetupOreGeneration();
 		setup.init();
+		
+		EssentialProperties.CreateCrystalTypes();
 			
 		//LOGGER.info("Logger: OreGen complete!");
 		//proxy.init();
@@ -300,17 +301,17 @@ public class BareEssentials {
 		@SubscribeEvent
 		public static void onModelBakeEvent(ModelBakeEvent event) {
 			try {
-				IUnbakedModel crystalOne = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/scheelite_crystal_one.obj"));
-				IUnbakedModel crystalTwo = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/scheelite_crystal_two.obj"));
-				IUnbakedModel crystalThree = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/scheelite_crystal_three.obj"));
-				IUnbakedModel crystalFour = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/scheelite_crystal_four.obj"));
-				IUnbakedModel crystalFive = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/scheelite_crystal_five.obj"));
+				IUnbakedModel crystalOne = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystal_one.obj"));
+				IUnbakedModel crystalTwo = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystal_two.obj"));
+				IUnbakedModel crystalThree = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystal_three.obj"));
+				IUnbakedModel crystalFour = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystal_four.obj"));
+				IUnbakedModel crystalFive = ModelLoaderRegistry.getModelOrMissing(new ResourceLocation("bareessentials:block/crystal_five.obj"));
 				//TextureAtlasSprite test = new TextureAtlasSprite("bareessentials:block/scheelite.png", 16, 16);
 				
 				if (crystalOne instanceof OBJModel) {
 					IBakedModel crystalOneBakedModel = crystalOne.bake(event.getModelLoader(), ModelLoader.defaultTextureGetter(), new BasicState(crystalOne.getDefaultState(), false), DefaultVertexFormats.BLOCK);
 					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal_one", ""), crystalOneBakedModel);
-					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal", "inventory"), crystalOneBakedModel);
+					//crystalOne.retexture(textures);
 				}
 				if (crystalTwo instanceof OBJModel) {
 					IBakedModel crystalTwoBakedModel = crystalTwo.bake(event.getModelLoader(), ModelLoader.defaultTextureGetter(), new BasicState(crystalTwo.getDefaultState(), false), DefaultVertexFormats.BLOCK);
@@ -327,6 +328,7 @@ public class BareEssentials {
 				if (crystalFive instanceof OBJModel) {
 					IBakedModel crystalFiveBakedModel = crystalFive.bake(event.getModelLoader(), ModelLoader.defaultTextureGetter(), new BasicState(crystalFive.getDefaultState(), false), DefaultVertexFormats.BLOCK);
 					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal_five", ""), crystalFiveBakedModel);
+					event.getModelRegistry().put(new ModelResourceLocation("bareessentials:scheelite_crystal", "inventory"), crystalFiveBakedModel);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();

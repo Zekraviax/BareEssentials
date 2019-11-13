@@ -2,6 +2,8 @@ package com.zekra.bareessentials.blocks;
 
 import java.util.Random;
 
+import javax.annotation.Nullable;
+
 import com.zekra.bareessentials.BareEssentials;
 
 import net.minecraft.block.Block;
@@ -10,6 +12,9 @@ import net.minecraft.block.CropsBlock;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.state.EnumProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.util.math.BlockPos;
@@ -21,6 +26,9 @@ import net.minecraftforge.common.ToolType;
 
 public class EssentialCrystal extends CropsBlock implements IGrowable {
 
+	public static final IntegerProperty CRYSTAL_AGE = IntegerProperty.create("crystal_age", 0, 4);
+	public static final EnumProperty<CrystalTypes> CRYSTAL_TYPE = EnumProperty.create("crystal_type", CrystalTypes.class);
+	
 	public EssentialCrystal() {
 		super(Properties.create(Material.ROCK)
 				.sound(SoundType.STONE)
@@ -29,12 +37,12 @@ public class EssentialCrystal extends CropsBlock implements IGrowable {
 				.harvestLevel(1)
 				.doesNotBlockMovement()
 				.tickRandomly());
+		//this.setDefaultState(this.stateContainer.getBaseState().with(this.getTypeProperty(), CrystalTypes.SCHEELITE));
 		this.setDefaultState(this.stateContainer.getBaseState().with(this.getAgeProperty(), Integer.valueOf(0)));
 	}
-	
-	public static final VoxelShape CRYSTAL_FIVE_COLLISION_BOX = Block.makeCuboidShape(2.5D, 0.0D, 3.0D, 12.5D, 11.0D, 14.0D);
-	public static final IntegerProperty CRYSTAL_AGE = IntegerProperty.create("crystal_age", 0, 4);
+		
 	protected Integer TICKS_UNTIL_NEXT_GROWTH = 0;
+	public static final VoxelShape CRYSTAL_FIVE_COLLISION_BOX = Block.makeCuboidShape(2.5D, 0.0D, 3.0D, 12.5D, 11.0D, 14.0D);
 	
 	@Override
 	public boolean isSolid(BlockState p_200124_1_) {
@@ -51,9 +59,15 @@ public class EssentialCrystal extends CropsBlock implements IGrowable {
 		return true;
 	}
 	
+	// Age property functions
 	@Override
 	public IntegerProperty getAgeProperty() {
 	    return CRYSTAL_AGE;
+	}
+	
+	// Type property functions
+	public EnumProperty<CrystalTypes> getTypeProperty() {
+		return CRYSTAL_TYPE;
 	}
 	
 	@Override
@@ -66,10 +80,20 @@ public class EssentialCrystal extends CropsBlock implements IGrowable {
 		return state.get(this.getAgeProperty());
 	}
 	
+	protected Enum<CrystalTypes> getType (BlockState state) {
+		return state.get(this.getTypeProperty());
+	}
+	
 	@Override
 	public BlockState withAge(int age) {
 		return this.getDefaultState().with(this.getAgeProperty(), Integer.valueOf(age));
 	}
+	
+	/*
+	public BlockState withType (EnumProperty<CrystalTypes> type) {
+		return this.getDefaultState().with(this.getTypeProperty(), CRYSTAL_TYPE);
+	}
+	*/
 
 	@Override
 	public boolean isMaxAge(BlockState state) {
@@ -79,9 +103,18 @@ public class EssentialCrystal extends CropsBlock implements IGrowable {
 	@Override
 	public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
 		this.TICKS_UNTIL_NEXT_GROWTH++;
-		BareEssentials.LOGGER.debug("Crystal: 'Tick' called. Age in ticks: " + this.TICKS_UNTIL_NEXT_GROWTH.toString());
 		grow(worldIn, pos, state);
+		
+		BareEssentials.LOGGER.debug("Crystal: 'Tick' called. Age in ticks: " + this.TICKS_UNTIL_NEXT_GROWTH.toString());
+		BareEssentials.LOGGER.debug("Crystal Type: " + this.getType(state).toString());
 	}
+	
+    @Override
+    public void onBlockPlacedBy(World world, BlockPos pos, BlockState state, @Nullable LivingEntity entity, ItemStack stack) {
+        if (entity != null) {
+            world.setBlockState(pos, state.with(this.getTypeProperty(), CrystalTypes.SCHEELITE), 2);
+        }
+    }
 	
 	@Override
 	public void grow(World worldIn, BlockPos pos, BlockState state) {

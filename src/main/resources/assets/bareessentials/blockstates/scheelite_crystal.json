@@ -1,15 +1,14 @@
 {
 	"forge_marker": 1,
-	"defaults": {
-    	"textures": {
-      		"particle": "bareessentials:block/scheelite"
-		}
+	"custom": { "flip-v": true },
+    "textures": {
+      	"particle": "bareessentials:block/scheelite"
 	},
   	"variants": {
-  		"crystal_age=0": { "model": "bareessentials:block/scheelite_crystal_one.obj"},
-    	"crystal_age=1": { "model": "bareessentials:block/scheelite_crystal_two.obj" },
-    	"crystal_age=2": { "model": "bareessentials:block/scheelite_crystal_three.obj" },
-    	"crystal_age=3": { "model": "bareessentials:block/scheelite_crystal_four.obj" },
-    	"crystal_age=4": { "model": "bareessentials:block/scheelite_crystal_five.obj" }
+		"crystal_age=0": { "model": "bareessentials:block/crystal_one"},
+    	"crystal_age=1": { "model": "bareessentials:block/crystal_two" },
+    	"crystal_age=2": { "model": "bareessentials:block/crystal_three" },
+    	"crystal_age=3": { "model": "bareessentials:block/crystal_four" },
+    	"crystal_age=4": { "model": "bareessentials:block/crystal_five" }
   	}
 }
