@@ -1,6 +1,6 @@
 # Blender v2.79 (sub 0) OBJ File: ''
 # www.blender.org
-mtllib Crystal1.mtl
+mtllib scheelite_crystal_one.mtl
 o Crystal1_Cube
 v -0.402422 0.000000 0.402422
 v -0.402422 0.000000 0.597578
