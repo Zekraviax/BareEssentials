@@ -1,0 +1,20 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"uvlock": true,
+		"custom": { "flip-v": true },
+		"model": "bareessentials:block/crystals/hematite_crystal_five.obj",
+    	"textures": {
+      		"particle": "bareessentials:block/hematite"
+		}
+	},
+  	"variants": {
+  		"crystal_age": { 
+			"0": { "model": "bareessentials:block/crystals/hematite_crystal_one.obj" },
+			"1": { "model": "bareessentials:block/crystals/hematite_crystal_two.obj" },
+			"2": { "model": "bareessentials:block/crystals/hematite_crystal_three.obj" },
+			"3": { "model": "bareessentials:block/crystals/hematite_crystal_four.obj" },
+			"4": { "model": "bareessentials:block/crystals/hematite_crystal_five.obj" }
+  		}
+	}
+}

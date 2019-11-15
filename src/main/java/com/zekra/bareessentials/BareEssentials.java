@@ -21,24 +21,15 @@ import com.zekra.bareessentials.setup.ModSetup;
 import com.zekra.bareessentials.world.OreGeneration;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.model.IBakedModel;
-import net.minecraft.client.renderer.model.IUnbakedModel;
-import net.minecraft.client.renderer.model.ModelResourceLocation;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.PickaxeItem;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelBakeEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
-import net.minecraftforge.client.model.BasicState;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.client.model.obj.OBJLoader;
-import net.minecraftforge.client.model.obj.OBJModel;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -134,8 +125,20 @@ public class BareEssentials {
 				ModBlocks.WAX_BLOCK_YELLOW = new WaxBlock().setRegistryName(MOD_ID, "wax_block_yellow"),
 				
 				// Crystal Blocks
+				ModBlocks.BORNITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "bornite_crystal"),
+				ModBlocks.CASSITERITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cassiterite_crystal"),
+				ModBlocks.CINNABAR_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cinnabar_crystal"),
+				ModBlocks.DOLOMITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "dolomite_crystal"),
+				ModBlocks.GALENA_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "galena_crystal"),
+				ModBlocks.HEMATITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "hematite_crystal"),
+				ModBlocks.ILMENITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "ilmenite_crystal"),
+				ModBlocks.PENTLANDITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "pentlandite_crystal"),
+				ModBlocks.PYROLUSITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "pyrolusite_crystal"),
 				ModBlocks.SCHEELITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "scheelite_crystal"),
-				ModBlocks.BORNITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "bornite_crystal")
+				ModBlocks.SPERRYLITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "sperrylite_crystal"),
+				ModBlocks.SPHALERITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "sphalerite_crystal"),
+				ModBlocks.URANINITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "uraninite_crystal"),
+				ModBlocks.WOLFRAMITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "wolframite_crystal")
 			);
 		}
 	
@@ -259,8 +262,20 @@ public class BareEssentials {
 				ModItems.WAX_FLAKE_YELLOW = (WaxFlake) new WaxFlake(properties).setRegistryName("wax_flake_yellow"),
 				
 				// Crystal BlockItems
-				new BlockItem(ModBlocks.SCHEELITE_CRYSTAL, properties).setRegistryName("scheelite_crystal"),
 				new BlockItem(ModBlocks.BORNITE_CRYSTAL, properties).setRegistryName("bornite_crystal"),
+				new BlockItem(ModBlocks.CASSITERITE_CRYSTAL, properties).setRegistryName("cassiterite_crystal"),
+				new BlockItem(ModBlocks.CINNABAR_CRYSTAL, properties).setRegistryName("cinnabar_crystal"),
+				new BlockItem(ModBlocks.DOLOMITE_CRYSTAL, properties).setRegistryName("dolomite_crystal"),
+				new BlockItem(ModBlocks.GALENA_CRYSTAL, properties).setRegistryName("galena_crystal"),
+				new BlockItem(ModBlocks.HEMATITE_CRYSTAL, properties).setRegistryName("hematite_crystal"),
+				new BlockItem(ModBlocks.ILMENITE_CRYSTAL, properties).setRegistryName("ilmenite_crystal"),
+				new BlockItem(ModBlocks.PENTLANDITE_CRYSTAL, properties).setRegistryName("pentlandite_crystal"),
+				new BlockItem(ModBlocks.PYROLUSITE_CRYSTAL, properties).setRegistryName("pyrolusite_crystal"),
+				new BlockItem(ModBlocks.SCHEELITE_CRYSTAL, properties).setRegistryName("scheelite_crystal"),
+				new BlockItem(ModBlocks.SPERRYLITE_CRYSTAL, properties).setRegistryName("sperrylite_crystal"),
+				new BlockItem(ModBlocks.SPHALERITE_CRYSTAL, properties).setRegistryName("sphalerite_crystal"),
+				new BlockItem(ModBlocks.URANINITE_CRYSTAL, properties).setRegistryName("uraninite_crystal"),
+				new BlockItem(ModBlocks.WOLFRAMITE_CRYSTAL, properties).setRegistryName("wolframite_crystal"),
 				
 				// Trees and Wood
 				
@@ -300,10 +315,7 @@ public class BareEssentials {
 		
 		@SubscribeEvent
 		public static void onModelBakeEvent(ModelBakeEvent event) {
-
-			//IUnbakedModel[] unbakedModels = { crystalOne, crystalTwo  };
 			CrystalModelRegistry.RegisterCrystalModels(event);
-
 		}
 		
 	    @SubscribeEvent

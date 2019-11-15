@@ -105,6 +105,18 @@ public class ModBlocks {
 	public static final Block LIQUID_WAX_BLOCK_YELLOW = null;
 	
 	// Crystals
-	public static Block SCHEELITE_CRYSTAL;
 	public static Block BORNITE_CRYSTAL;
+	public static Block CASSITERITE_CRYSTAL;
+	public static Block CINNABAR_CRYSTAL;
+	public static Block DOLOMITE_CRYSTAL;
+	public static Block GALENA_CRYSTAL;
+	public static Block HEMATITE_CRYSTAL;
+	public static Block ILMENITE_CRYSTAL;
+	public static Block PENTLANDITE_CRYSTAL;
+	public static Block PYROLUSITE_CRYSTAL;
+	public static Block SCHEELITE_CRYSTAL;
+	public static Block SPERRYLITE_CRYSTAL;
+	public static Block SPHALERITE_CRYSTAL;
+	public static Block URANINITE_CRYSTAL;
+	public static Block WOLFRAMITE_CRYSTAL;
 }

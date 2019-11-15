@@ -129,7 +129,20 @@
 	"item.bareessentials.liquid_wax_bucket_yellow": "Yellow Liquid Wax Bucket",
 	
 	
+	"block.bareessentials.bornite_crystal": "Bornite Crystal",
+	"block.bareessentials.cassiterite_crystal": "Cassiterite Crystal",
+	"block.bareessentials.cinnabar_crystal": "Cinnabar Crystal",
+	"block.bareessentials.dolomite_crystal": "Dolomite Crystal",
+	"block.bareessentials.galena_crystal": "Galena Crystal",
+	"block.bareessentials.hematite_crystal": "Hematite Crystal",
+	"block.bareessentials.ilmenite_crystal": "Ilmenite Crystal",
+	"block.bareessentials.pentlandite_crystal": "Pentlandite Crystal",
+	"block.bareessentials.pyrolusite_crystal": "Pyrolusite Crystal",
 	"block.bareessentials.scheelite_crystal": "Scheelite Crystal",
+	"block.bareessentials.sperrylite_crystal": "Sperrylite Crystal",
+	"block.bareessentials.sphalerite_crystal": "Sphalerite Crystal",
+	"block.bareessentials.uraninite_crystal": "Uraninite Crystal",
+	"block.bareessentials.wolframite_crystal": "Wolframite Crystal",
 	
 	
 	"biome.bareessentials.outback_test": "Outback Test",

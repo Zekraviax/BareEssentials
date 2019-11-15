@@ -10,9 +10,12 @@ import net.minecraft.block.CropsBlock;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -98,7 +101,19 @@ public class EssentialCrystal extends CropsBlock implements IGrowable {
 	public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
 		this.TICKS_UNTIL_NEXT_GROWTH++;
 		BareEssentials.LOGGER.debug("Crystal: 'Tick' called. Age in ticks: " + this.TICKS_UNTIL_NEXT_GROWTH.toString());
-		grow(worldIn, pos, state);
+		
+		if (TICKS_UNTIL_NEXT_GROWTH % 4 == 0)
+			grow(worldIn, pos, state);
+	}
+	
+	@Override
+    protected IItemProvider getSeedsItem() {
+		return this;
+	}
+
+	@Override
+	public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
+		return new ItemStack(this.getSeedsItem());
 	}
 	
 	@Override
