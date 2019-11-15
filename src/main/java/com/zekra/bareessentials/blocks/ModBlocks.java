@@ -106,4 +106,5 @@ public class ModBlocks {
 	
 	// Crystals
 	public static Block SCHEELITE_CRYSTAL;
+	public static Block BORNITE_CRYSTAL;
 }

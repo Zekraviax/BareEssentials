@@ -1,6 +1,6 @@
 # Blender v2.79 (sub 0) OBJ File: 'crystals.blend'
 # www.blender.org
-mtllib scheelite_crystal_five.mtl
+mtllib bornite_crystal_five.mtl
 o Crystal1_Cube.003
 v 0.496209 0.000000 0.248894
 v 0.496209 0.000000 0.471711
