@@ -21,13 +21,17 @@ import com.zekra.bareessentials.setup.ModSetup;
 import com.zekra.bareessentials.world.OreGeneration;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.LogBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelBakeEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
@@ -67,7 +71,7 @@ public class BareEssentials {
 		//LOGGER.info("Logger: OreGen complete!");
 		//proxy.init();
 	}
-	
+
 	private void doClientStuff(final FMLClientSetupEvent event) {
 		OBJLoader.INSTANCE.addDomain("bareessentials");
 	}
@@ -138,7 +142,11 @@ public class BareEssentials {
 				ModBlocks.SPERRYLITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "sperrylite_crystal"),
 				ModBlocks.SPHALERITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "sphalerite_crystal"),
 				ModBlocks.URANINITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "uraninite_crystal"),
-				ModBlocks.WOLFRAMITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "wolframite_crystal")
+				ModBlocks.WOLFRAMITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "wolframite_crystal"),
+				
+				// Trees and Wood
+				ModBlocks.GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName("gum_log"),
+				ModBlocks.GUM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("gum_leaves")
 			);
 		}
 	
@@ -278,6 +286,8 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.WOLFRAMITE_CRYSTAL, properties).setRegistryName("wolframite_crystal"),
 				
 				// Trees and Wood
+				new BlockItem(ModBlocks.GUM_LOG, properties).setRegistryName("gum_log"),
+				new BlockItem(ModBlocks.GUM_LEAVES, properties).setRegistryName("gum_leaves"),
 				
 				// Other
 				ModItems.FOSSIL = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("fossil"),
@@ -293,31 +303,20 @@ public class BareEssentials {
 				EssentialBiomes.OutbackTestBiome = new OutbackTest().setRegistryName("outback_test")
 			);
 		}
-		
+
+		/*
 		@SubscribeEvent
 		public static void onModelRegister(ModelRegistryEvent event)
 		{
-			//char splitOn = 0;
-			//ModelLoader.addSpecialModel(ResourceLocation.tryCreate("bareessentials:block/scheelite_crystal"));
-			//ModelLoader.addSpecialModel(ModelResourceLocation.create("bareessentials:block/crystal_five", splitOn));
-			
-			/*
-	        try {
-	        	OBJModel model = (OBJModel) OBJLoader.INSTANCE.loadModel(ModelResourceLocation.create("bareessentials:block/crystal_five", splitOn));
-				LOGGER.debug("Hello: Loaded crystal_five model?");
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	        */
-	        
 			LOGGER.debug("Hello: Models Registered");
 		}
+		*/
 		
 		@SubscribeEvent
 		public static void onModelBakeEvent(ModelBakeEvent event) {
 			CrystalModelRegistry.RegisterCrystalModels(event);
 		}
-		
+
 	    @SubscribeEvent
 	    public static void onPreTextureStitch(TextureStitchEvent.Pre event) {
 	        //event.addSprite(ResourceLocation.tryCreate("bareessentials:block/scheelite"));

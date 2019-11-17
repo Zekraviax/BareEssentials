@@ -119,4 +119,8 @@ public class ModBlocks {
 	public static Block SPHALERITE_CRYSTAL;
 	public static Block URANINITE_CRYSTAL;
 	public static Block WOLFRAMITE_CRYSTAL;
+	
+	// Trees and Wood
+	public static Block GUM_LOG;
+	public static Block GUM_LEAVES;
 }
