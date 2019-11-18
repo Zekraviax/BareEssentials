@@ -7,4 +7,5 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder("bareessentials")
 public class EssentialFeatures {
 	public static AbstractTreeFeature<NoFeatureConfig> GUM_TREE_FEATURE = new GumTreeFeature(NoFeatureConfig::deserialize, true);
+	public static AbstractTreeFeature<NoFeatureConfig> EUCALYPTUS_TREE_FEATURE = new EucalyptusTreeFeature(NoFeatureConfig::deserialize, true);
 }

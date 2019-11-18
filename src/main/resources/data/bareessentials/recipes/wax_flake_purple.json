@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:wax_block_purple"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:wax_flake_purple",
+    "count": 4
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#bareessentials:gum_logs"
+    "bareessentials:gum_log",
+	"bareessentials:eucalyptus_log"
 	]
 }

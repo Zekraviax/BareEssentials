@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:wax_block_cyan"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:wax_flake_cyan",
+    "count": 4
+  }
+}

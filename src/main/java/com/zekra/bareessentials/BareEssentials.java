@@ -6,11 +6,13 @@ import org.apache.logging.log4j.Logger;
 import com.zekra.bareessentials.biomes.EssentialBiomes;
 import com.zekra.bareessentials.biomes.OutbackTest;
 import com.zekra.bareessentials.blocks.EssentialCrystal;
+import com.zekra.bareessentials.blocks.EssentialDoor;
 import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
 import com.zekra.bareessentials.blocks.EssentialOre;
 import com.zekra.bareessentials.blocks.ModBlocks;
 import com.zekra.bareessentials.blocks.WaxBlock;
 import com.zekra.bareessentials.fluid.LiquidRegistry;
+import com.zekra.bareessentials.items.EssentialDoorItem;
 import com.zekra.bareessentials.items.EssentialGemstone;
 import com.zekra.bareessentials.items.EssentialKnife;
 import com.zekra.bareessentials.items.EssentialOreChunk;
@@ -146,7 +148,13 @@ public class BareEssentials {
 				
 				// Trees and Wood
 				ModBlocks.GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName("gum_log"),
-				ModBlocks.GUM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("gum_leaves")
+				ModBlocks.GUM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("gum_leaves"),
+				ModBlocks.GUM_DOOR = new EssentialDoor().setRegistryName("gum_door"),
+				ModBlocks.GUM_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("gum_planks"),
+				ModBlocks.EUCALYPTUS_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName("eucalyptus_log"),
+				ModBlocks.EUCALYPTUS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("eucalyptus_leaves"),
+				ModBlocks.EUCALYPTUS_DOOR = new EssentialDoor().setRegistryName("eucalyptus_door"),
+				ModBlocks.EUCALYPTUS_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("eucalyptus_planks")
 			);
 		}
 	
@@ -224,13 +232,6 @@ public class BareEssentials {
 				ModItems.SAPPHIRE = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("sapphire"),
 				ModItems.TURQUOISE = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("turquoise"),
 				
-				// Knives
-				new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),
-				
-				// Tools
-				//Items.DIAMOND_PICKAXE
-				ModItems.TITANIUM_PICKAXE = (PickaxeItem) new PickaxeItem(Essential_ItemTiers.TITANIUM, 0, 0.f, properties).setRegistryName("titanium_pickaxe"),
-				
 				// Wax Blocks
 				new BlockItem(ModBlocks.WAX_BLOCK_BLACK, properties).setRegistryName("wax_block_black"),
 				new BlockItem(ModBlocks.WAX_BLOCK_BLUE, properties).setRegistryName("wax_block_blue"),
@@ -288,10 +289,25 @@ public class BareEssentials {
 				// Trees and Wood
 				new BlockItem(ModBlocks.GUM_LOG, properties).setRegistryName("gum_log"),
 				new BlockItem(ModBlocks.GUM_LEAVES, properties).setRegistryName("gum_leaves"),
+				new EssentialDoorItem(ModBlocks.GUM_DOOR, properties).setRegistryName("gum_door"),
+				new BlockItem(ModBlocks.GUM_PLANKS, properties).setRegistryName("gum_planks"),
+				new BlockItem(ModBlocks.EUCALYPTUS_LOG, properties).setRegistryName("eucalyptus_log"),
+				new BlockItem(ModBlocks.EUCALYPTUS_LEAVES, properties).setRegistryName("eucalyptus_leaves"),
+				new EssentialDoorItem(ModBlocks.EUCALYPTUS_DOOR, properties).setRegistryName("eucalyptus_door"),
+				new BlockItem(ModBlocks.EUCALYPTUS_PLANKS, properties).setRegistryName("eucalyptus_planks"),
+				
+				
+				// Knives
+				new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),
+				
+				// Tools
+				//Items.DIAMOND_PICKAXE
+				ModItems.TITANIUM_PICKAXE = (PickaxeItem) new PickaxeItem(Essential_ItemTiers.TITANIUM, 0, 0.f, properties).setRegistryName("titanium_pickaxe"),
 				
 				// Other
 				ModItems.FOSSIL = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("fossil"),
 				ModItems.ROCK = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("rock")
+				
 			);
 		}
 		 

@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "bareessentials:block/eucalyptus_door_bottom",
+        "top": "bareessentials:block/eucalyptus_door_top"
+    }
+}

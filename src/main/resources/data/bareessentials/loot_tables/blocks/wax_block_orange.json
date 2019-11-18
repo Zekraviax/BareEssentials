@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:block",
+	"pools": 
+	[
+		{
+    		"rolls": 4,
+			"entries": 
+			[
+        		{
+          		"type": "minecraft:item",
+          		"name": "bareessentials:wax_flake_orange"
+        		}
+      		]
+    	}
+  	]
+}

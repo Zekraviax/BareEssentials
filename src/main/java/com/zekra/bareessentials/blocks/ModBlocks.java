@@ -123,4 +123,10 @@ public class ModBlocks {
 	// Trees and Wood
 	public static Block GUM_LOG;
 	public static Block GUM_LEAVES;
+	public static Block GUM_DOOR;
+	public static Block GUM_PLANKS;
+	public static Block EUCALYPTUS_LOG;
+	public static Block EUCALYPTUS_LEAVES;
+	public static Block EUCALYPTUS_DOOR;
+	public static Block EUCALYPTUS_PLANKS;
 }
