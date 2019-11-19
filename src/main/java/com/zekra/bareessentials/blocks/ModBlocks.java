@@ -121,12 +121,20 @@ public class ModBlocks {
 	public static Block WOLFRAMITE_CRYSTAL;
 	
 	// Trees and Wood
-	public static Block GUM_LOG;
-	public static Block GUM_LEAVES;
-	public static Block GUM_DOOR;
-	public static Block GUM_PLANKS;
+	// Eucalyptus
 	public static Block EUCALYPTUS_LOG;
 	public static Block EUCALYPTUS_LEAVES;
 	public static Block EUCALYPTUS_DOOR;
 	public static Block EUCALYPTUS_PLANKS;
+	public static Block EUCALYPTUS_SAPLING;
+	public static Block EUCALYPTUS_TRAPDOOR;
+	public static Block STRIPPED_EUCALYPTUS_LOG;
+	// Gum
+	public static Block GUM_LOG;
+	public static Block GUM_LEAVES;
+	public static Block GUM_DOOR;
+	public static Block GUM_PLANKS;
+	public static Block GUM_TRAPDOOR;
+	public static Block STRIPPED_GUM_LOG;
+
 }

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "bareessentials:block/stripped_eucalyptus_log" },
+        "axis=z":   { "model": "bareessentials:block/stripped_eucalyptus_log", "x": 90 },
+        "axis=x":   { "model": "bareessentials:block/stripped_eucalyptus_log", "x": 90, "y": 90 }
+    }
+}

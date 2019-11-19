@@ -145,14 +145,17 @@
 	"block.bareessentials.wolframite_crystal": "Wolframite Crystal",
 	
 	
-	"block.bareessentials.gum_door": "Gum Door",
-	"block.bareessentials.gum_leaves": "Gum Leaves",
-	"block.bareessentials.gum_log": "Gum Log",
-	"block.bareessentials.gum_planks": "Gum Planks",
 	"block.bareessentials.eucalyptus_door": "Eucalyptus Door",
 	"block.bareessentials.eucalyptus_leaves": "Eucalyptus Leaves",
 	"block.bareessentials.eucalyptus_log": "Eucalyptus Log",
 	"block.bareessentials.eucalyptus_planks": "Eucalyptus Planks",
+	"block.bareessentials.stripped_eucalyptus_log": "Stripped Eucalyptus Log",
+	"block.bareessentials.gum_door": "Gum Door",
+	"block.bareessentials.gum_leaves": "Gum Leaves",
+	"block.bareessentials.gum_log": "Gum Log",
+	"block.bareessentials.gum_planks": "Gum Planks",
+	"block.bareessentials.gum_trapdoor": "Gum Trapdoor",
+	"block.bareessentials.stripped_gum_log": "Stripped Gum Log",
 	
 	
 	"biome.bareessentials.outback_test": "Outback Test",

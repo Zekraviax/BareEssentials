@@ -1,6 +1,7 @@
 {
-    "variants": 
-	{
-        "": { "model": "bareessentials:block/gum_log" }
+    "variants": {
+        "axis=y":  { "model": "bareessentials:block/gum_log" },
+        "axis=z":   { "model": "bareessentials:block/gum_log", "x": 90 },
+        "axis=x":   { "model": "bareessentials:block/gum_log", "x": 90, "y": 90 }
     }
 }

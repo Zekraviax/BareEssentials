@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:gum_log",
+    "bareessentials:gum_wood",
+    "bareessentials:stripped_gum_log",
+    "bareessentials:stripped_gum_wood"
+  ]
+}
