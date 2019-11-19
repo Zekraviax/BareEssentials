@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "bareessentials:block/holly_leaves"
+    }
+}

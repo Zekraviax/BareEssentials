@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "bareessentials:block/cherry_blossom_sapling"
+    }
+}

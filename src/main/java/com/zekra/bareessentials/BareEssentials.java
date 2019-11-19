@@ -9,9 +9,15 @@ import com.zekra.bareessentials.blocks.EssentialCrystal;
 import com.zekra.bareessentials.blocks.EssentialDoor;
 import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
 import com.zekra.bareessentials.blocks.EssentialOre;
+import com.zekra.bareessentials.blocks.EssentialSapling;
 import com.zekra.bareessentials.blocks.EssentialTrapDoor;
 import com.zekra.bareessentials.blocks.ModBlocks;
 import com.zekra.bareessentials.blocks.WaxBlock;
+import com.zekra.bareessentials.blocks.trees.BanksiaTree;
+import com.zekra.bareessentials.blocks.trees.CherryBlossomTree;
+import com.zekra.bareessentials.blocks.trees.EucalyptusTree;
+import com.zekra.bareessentials.blocks.trees.GumTree;
+import com.zekra.bareessentials.blocks.trees.HollyTree;
 import com.zekra.bareessentials.fluid.LiquidRegistry;
 import com.zekra.bareessentials.items.EssentialDoorItem;
 import com.zekra.bareessentials.items.EssentialGemstone;
@@ -148,19 +154,46 @@ public class BareEssentials {
 				ModBlocks.WOLFRAMITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "wolframite_crystal"),
 				
 				// Trees and Wood
-				ModBlocks.EUCALYPTUS_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName("eucalyptus_log"),
-				ModBlocks.EUCALYPTUS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("eucalyptus_leaves"),
-				ModBlocks.EUCALYPTUS_DOOR = new EssentialDoor().setRegistryName("eucalyptus_door"),
-				ModBlocks.EUCALYPTUS_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("eucalyptus_planks"),
-				ModBlocks.EUCALYPTUS_TRAPDOOR = new EssentialTrapDoor().setRegistryName("eucalyptus_trapdoor"),
-				ModBlocks.STRIPPED_EUCALYPTUS_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("stripped_eucalyptus_log"),
-				ModBlocks.GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName("gum_log"),
-				ModBlocks.GUM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName("gum_leaves"),
-				ModBlocks.GUM_DOOR = new EssentialDoor().setRegistryName("gum_door"),
-				ModBlocks.GUM_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("gum_planks"),
-				ModBlocks.GUM_TRAPDOOR = new EssentialTrapDoor().setRegistryName("gum_trapdoor"),
-				ModBlocks.STRIPPED_GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("stripped_gum_log")
-				//Blocks.ACACIA_LOG
+				// Banksia
+				ModBlocks.BANKSIA_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "banksia_door"),
+				ModBlocks.BANKSIA_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "banksia_leaves"),
+				ModBlocks.BANKSIA_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "banksia_log"),
+				ModBlocks.BANKSIA_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "banksia_planks"),
+				ModBlocks.BANKSIA_SAPLING = new EssentialSapling(new BanksiaTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "banksia_sapling"),
+				ModBlocks.BANKSIA_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "banksia_trapdoor"),
+				ModBlocks.STRIPPED_BANKSIA_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_banksia_log"),
+				// Cherry Blossom
+				ModBlocks.CHERRY_BLOSSOM_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "cherry_blossom_door"),
+				ModBlocks.CHERRY_BLOSSOM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "cherry_blossom_leaves"),
+				ModBlocks.CHERRY_BLOSSOM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "cherry_blossom_log"),
+				ModBlocks.CHERRY_BLOSSOM_SAPLING = new EssentialSapling(new CherryBlossomTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "cherry_blossom_sapling"),
+				ModBlocks.CHERRY_BLOSSOM_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "cherry_blossom_planks"),
+				ModBlocks.CHERRY_BLOSSOM_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "cherry_blossom_trapdoor"),
+				ModBlocks.STRIPPED_CHERRY_BLOSSOM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_cherry_blossom_log"),
+				// Eucalyptus
+				ModBlocks.EUCALYPTUS_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "eucalyptus_door"),
+				ModBlocks.EUCALYPTUS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "eucalyptus_leaves"),
+				ModBlocks.EUCALYPTUS_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "eucalyptus_log"),			
+				ModBlocks.EUCALYPTUS_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "eucalyptus_planks"),
+				ModBlocks.EUCALYPTUS_SAPLING = new EssentialSapling(new EucalyptusTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "eucalyptus_sapling"),
+				ModBlocks.EUCALYPTUS_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "eucalyptus_trapdoor"),
+				ModBlocks.STRIPPED_EUCALYPTUS_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_eucalyptus_log"),
+				// Gum
+				ModBlocks.GUM_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "gum_door"),
+				ModBlocks.GUM_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "gum_leaves"),
+				ModBlocks.GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "gum_log"),			
+				ModBlocks.GUM_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "gum_planks"),
+				ModBlocks.GUM_SAPLING = new EssentialSapling(new GumTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "gum_sapling"),
+				ModBlocks.GUM_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "gum_trapdoor"),
+				ModBlocks.STRIPPED_GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_gum_log"),
+				// Gum
+				ModBlocks.HOLLY_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "holly_door"),
+				ModBlocks.HOLLY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "holly_leaves"),
+				ModBlocks.HOLLY_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "holly_log"),
+				ModBlocks.HOLLY_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "holly_planks"),
+				ModBlocks.HOLLY_SAPLING = new EssentialSapling(new HollyTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "holly_sapling"),
+				ModBlocks.HOLLY_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "holly_trapdoor"),
+				ModBlocks.STRIPPED_HOLLY_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_holly_log")
 			);
 		}
 	
@@ -293,18 +326,46 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.WOLFRAMITE_CRYSTAL, properties).setRegistryName("wolframite_crystal"),
 				
 				// Trees and Wood
-				new BlockItem(ModBlocks.EUCALYPTUS_LOG, properties).setRegistryName("eucalyptus_log"),
-				new BlockItem(ModBlocks.EUCALYPTUS_LEAVES, properties).setRegistryName("eucalyptus_leaves"),
+				// Banksia
+				new EssentialDoorItem(ModBlocks.BANKSIA_DOOR, properties).setRegistryName("banksia_door"),
+				new BlockItem(ModBlocks.BANKSIA_LEAVES, properties).setRegistryName("banksia_leaves"),
+				new BlockItem(ModBlocks.BANKSIA_LOG, properties).setRegistryName("banksia_log"),
+				new BlockItem(ModBlocks.BANKSIA_PLANKS, properties).setRegistryName("banksia_planks"),
+				new BlockItem(ModBlocks.BANKSIA_SAPLING, properties).setRegistryName("banksia_sapling"),
+				new BlockItem(ModBlocks.BANKSIA_TRAPDOOR, properties).setRegistryName("banksia_trapdoor"),
+				new BlockItem(ModBlocks.STRIPPED_BANKSIA_LOG, properties).setRegistryName("stripped_banksia_log"),
+				// Cherry Blossom
+				new EssentialDoorItem(ModBlocks.CHERRY_BLOSSOM_DOOR, properties).setRegistryName("cherry_blossom_door"),
+				new BlockItem(ModBlocks.CHERRY_BLOSSOM_LEAVES, properties).setRegistryName("cherry_blossom_leaves"),
+				new BlockItem(ModBlocks.CHERRY_BLOSSOM_LOG, properties).setRegistryName("cherry_blossom_log"),
+				new BlockItem(ModBlocks.CHERRY_BLOSSOM_PLANKS, properties).setRegistryName("cherry_blossom_planks"),
+				new BlockItem(ModBlocks.CHERRY_BLOSSOM_SAPLING, properties).setRegistryName("cherry_blossom_sapling"),
+				new BlockItem(ModBlocks.CHERRY_BLOSSOM_TRAPDOOR, properties).setRegistryName("cherry_blossom_trapdoor"),
+				new BlockItem(ModBlocks.STRIPPED_CHERRY_BLOSSOM_LOG, properties).setRegistryName("stripped_cherry_blossom_log"),
+				// Eucalyptus
 				new EssentialDoorItem(ModBlocks.EUCALYPTUS_DOOR, properties).setRegistryName("eucalyptus_door"),
+				new BlockItem(ModBlocks.EUCALYPTUS_LEAVES, properties).setRegistryName("eucalyptus_leaves"),
+				new BlockItem(ModBlocks.EUCALYPTUS_LOG, properties).setRegistryName("eucalyptus_log"),
 				new BlockItem(ModBlocks.EUCALYPTUS_PLANKS, properties).setRegistryName("eucalyptus_planks"),
+				new BlockItem(ModBlocks.EUCALYPTUS_SAPLING, properties).setRegistryName("eucalyptus_sapling"),
 				new BlockItem(ModBlocks.EUCALYPTUS_TRAPDOOR, properties).setRegistryName("eucalyptus_trapdoor"),
 				new BlockItem(ModBlocks.STRIPPED_EUCALYPTUS_LOG, properties).setRegistryName("stripped_eucalyptus_log"),
-				new BlockItem(ModBlocks.GUM_LOG, properties).setRegistryName("gum_log"),
-				new BlockItem(ModBlocks.GUM_LEAVES, properties).setRegistryName("gum_leaves"),
+				// Gum
 				new EssentialDoorItem(ModBlocks.GUM_DOOR, properties).setRegistryName("gum_door"),
+				new BlockItem(ModBlocks.GUM_LEAVES, properties).setRegistryName("gum_leaves"),
+				new BlockItem(ModBlocks.GUM_LOG, properties).setRegistryName("gum_log"),
 				new BlockItem(ModBlocks.GUM_PLANKS, properties).setRegistryName("gum_planks"),
+				new BlockItem(ModBlocks.GUM_SAPLING, properties).setRegistryName("gum_sapling"),
 				new BlockItem(ModBlocks.GUM_TRAPDOOR, properties).setRegistryName("gum_trapdoor"),
 				new BlockItem(ModBlocks.STRIPPED_GUM_LOG, properties).setRegistryName("stripped_gum_log"),
+				// Holly
+				new EssentialDoorItem(ModBlocks.HOLLY_DOOR, properties).setRegistryName("holly_door"),
+				new BlockItem(ModBlocks.HOLLY_LEAVES, properties).setRegistryName("holly_leaves"),
+				new BlockItem(ModBlocks.HOLLY_LOG, properties).setRegistryName("holly_log"),
+				new BlockItem(ModBlocks.HOLLY_PLANKS, properties).setRegistryName("holly_planks"),
+				new BlockItem(ModBlocks.HOLLY_SAPLING, properties).setRegistryName("holly_sapling"),
+				new BlockItem(ModBlocks.HOLLY_TRAPDOOR, properties).setRegistryName("holly_trapdoor"),
+				new BlockItem(ModBlocks.STRIPPED_HOLLY_LOG, properties).setRegistryName("stripped_holly_log"),
 				
 				
 				// Knives

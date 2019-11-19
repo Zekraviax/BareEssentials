@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves",
+    "textures": {
+        "all": "bareessentials:block/cherry_blossom_leaves"
+    }
+}

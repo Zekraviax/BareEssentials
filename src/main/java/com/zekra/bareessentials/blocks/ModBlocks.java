@@ -121,20 +121,44 @@ public class ModBlocks {
 	public static Block WOLFRAMITE_CRYSTAL;
 	
 	// Trees and Wood
+	// Banksia
+	public static Block BANKSIA_DOOR;
+	public static Block BANKSIA_LEAVES;
+	public static Block BANKSIA_LOG;
+	public static Block BANKSIA_PLANKS;
+	public static Block BANKSIA_SAPLING;
+	public static Block BANKSIA_TRAPDOOR;
+	public static Block STRIPPED_BANKSIA_LOG;
+	// Cherry Blossom
+	public static Block CHERRY_BLOSSOM_DOOR;
+	public static Block CHERRY_BLOSSOM_LEAVES;
+	public static Block CHERRY_BLOSSOM_LOG;
+	public static Block CHERRY_BLOSSOM_PLANKS;
+	public static Block CHERRY_BLOSSOM_SAPLING;
+	public static Block CHERRY_BLOSSOM_TRAPDOOR;
+	public static Block STRIPPED_CHERRY_BLOSSOM_LOG;
 	// Eucalyptus
-	public static Block EUCALYPTUS_LOG;
-	public static Block EUCALYPTUS_LEAVES;
 	public static Block EUCALYPTUS_DOOR;
+	public static Block EUCALYPTUS_LEAVES;
+	public static Block EUCALYPTUS_LOG;
 	public static Block EUCALYPTUS_PLANKS;
 	public static Block EUCALYPTUS_SAPLING;
 	public static Block EUCALYPTUS_TRAPDOOR;
 	public static Block STRIPPED_EUCALYPTUS_LOG;
 	// Gum
-	public static Block GUM_LOG;
-	public static Block GUM_LEAVES;
 	public static Block GUM_DOOR;
+	public static Block GUM_LEAVES;
+	public static Block GUM_LOG;
 	public static Block GUM_PLANKS;
+	public static Block GUM_SAPLING;
 	public static Block GUM_TRAPDOOR;
 	public static Block STRIPPED_GUM_LOG;
-
+	// Holly
+	public static Block HOLLY_DOOR;
+	public static Block HOLLY_LEAVES;
+	public static Block HOLLY_LOG;
+	public static Block HOLLY_PLANKS;
+	public static Block HOLLY_SAPLING;
+	public static Block HOLLY_TRAPDOOR;
+	public static Block STRIPPED_HOLLY_LOG;
 }
