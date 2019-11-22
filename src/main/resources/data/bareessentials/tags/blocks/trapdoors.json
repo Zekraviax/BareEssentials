@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:banksia_trapdoor",
+    "bareessentials:cherry_blossom_trapdoor",
+    "bareessentials:eucalyptus_trapdoor",
+    "bareessentials:gum_trapdoor",
+    "bareessentials:holly_trapdoor"
+  ]
+}

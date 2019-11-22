@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+	"bareessentials:bornite_crystal",
+	"bareessentials:cassiterite_crystal",
+	"bareessentials:cinnabar_crystal",
+	"bareessentials:dolomite_crystal",
+	"bareessentials:galena_crystal",
+	"bareessentials:hematite_crystal",
+	"bareessentials:ilmenite_crystal",
+	"bareessentials:pentlandite_crystal",
+	"bareessentials:pyrolusite_crystal",
+	"bareessentials:scheelite_crystal",
+	"bareessentials:sperrylite_crystal",
+	"bareessentials:sphalerite_crystal",
+	"bareessentials:uraninite_crystal",
+	"bareessentials:wolframite_crystal"
+  ]
+}

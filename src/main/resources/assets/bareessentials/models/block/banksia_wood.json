@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "bareessentials:block/banksia_log",
+        "side": "bareessentials:block/banksia_log"
+    }
+}

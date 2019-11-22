@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "bareessentials:gum_leaves",
-	"bareessentials:eucalyptus_leaves"
+	"bareessentials:banksia_leaves",
+	"bareessentials:cherry_blossom_leaves",
+	"bareessentials:eucalyptus_leaves",
+	"bareessentials:gum_leaves",
+	"bareessentials:holly_leaves"
   ]
 }

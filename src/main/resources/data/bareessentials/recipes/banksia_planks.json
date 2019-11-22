@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "bareessentials:banksia_logs"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:banksia_planks",
+    "count": 4
+  }
+}

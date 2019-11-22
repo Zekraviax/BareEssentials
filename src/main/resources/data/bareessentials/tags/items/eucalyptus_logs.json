@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:eucalyptus_log",
+    "bareessentials:eucalyptus_wood",
+    "bareessentials:stripped_eucalyptus_log",
+    "bareessentials:stripped_eucalyptus_wood"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:banksia_door",
+    "bareessentials:cherry_blossom_door",
+    "bareessentials:eucalyptus_door",
+    "bareessentials:gum_door",
+    "bareessentials:holly_door"
+  ]
+}

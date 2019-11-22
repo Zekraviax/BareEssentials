@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:banksia_sapling",
+    "bareessentials:cherry_blossom_sapling",
+    "bareessentials:eucalyptus_sapling",
+    "bareessentials:gum_sapling",
+    "bareessentials:holly_sapling"
+  ]
+}

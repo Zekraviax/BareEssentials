@@ -14,11 +14,11 @@ reducedDebugInfo:false
 snooperEnabled:false
 showSubtitles:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 mouseSensitivity:0.5
 fov:0.5
-gamma:0.0
+gamma:1.0
 renderDistance:12
 guiScale:2
 particles:0

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "bareessentials:block/cherry_blossom_log",
+        "side": "bareessentials:block/cherry_blossom_log"
+    }
+}

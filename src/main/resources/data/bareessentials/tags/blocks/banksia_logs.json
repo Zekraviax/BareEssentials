@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:banksia_log",
+	"bareessentials:banksia_wood",
+    "bareessentials:stripped_banksia_log",
+	"bareessentials:stripped_banksia_wood"
+  ]
+}

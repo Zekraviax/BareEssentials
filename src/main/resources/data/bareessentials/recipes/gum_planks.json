@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "bareessentials:gum_logs"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:gum_planks",
+    "count": 4
+  }
+}
