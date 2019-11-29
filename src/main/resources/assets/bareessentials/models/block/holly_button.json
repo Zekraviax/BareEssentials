@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "bareessentials:block/holly_planks"
+    }
+}

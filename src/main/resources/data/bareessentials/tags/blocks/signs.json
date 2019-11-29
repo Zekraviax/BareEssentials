@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#bareessentials:standing_signs"
+    "#bareessentials:standing_signs",
+	"#bareessentials:wall_signs"
   ]
 }

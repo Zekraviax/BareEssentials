@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_inventory",
+    "textures": {
+        "texture": "bareessentials:block/cherry_blossom_planks"
+    }
+}

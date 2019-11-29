@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "bareessentials:block/gum_planks",
+        "top": "bareessentials:block/gum_planks",
+        "side": "bareessentials:block/gum_planks"
+    }
+}

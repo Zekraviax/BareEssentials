@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "bareessentials:block/eucalyptus_planks",
+        "top": "bareessentials:block/eucalyptus_planks",
+        "side": "bareessentials:block/eucalyptus_planks"
+    }
+}

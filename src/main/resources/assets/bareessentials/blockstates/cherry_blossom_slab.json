@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "bareessentials:block/cherry_blossom_slab" },
+        "type=top": { "model": "bareessentials:block/cherry_blossom_slab_top" },
+        "type=double": { "model": "bareessentials:block/cherry_blossom_planks" }
+    }
+}

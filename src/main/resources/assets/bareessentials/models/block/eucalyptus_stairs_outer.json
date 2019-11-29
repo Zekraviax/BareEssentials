@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "bareessentials:block/eucalyptus_planks",
+        "top": "bareessentials:block/eucalyptus_planks",
+        "side": "bareessentials:block/eucalyptus_planks"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "bareessentials:block/banksia_slab" },
+        "type=top": { "model": "bareessentials:block/banksia_slab_top" },
+        "type=double": { "model": "bareessentials:block/banksia_planks" }
+    }
+}

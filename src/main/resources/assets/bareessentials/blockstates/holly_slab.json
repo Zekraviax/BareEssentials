@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "bareessentials:block/holly_slab" },
+        "type=top": { "model": "bareessentials:block/holly_slab_top" },
+        "type=double": { "model": "bareessentials:block/holly_planks" }
+    }
+}

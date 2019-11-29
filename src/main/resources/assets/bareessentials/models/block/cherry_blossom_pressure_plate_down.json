@@ -1,0 +1,6 @@
+{
+    "parent": "block/pressure_plate_down",
+    "textures": {
+        "texture": "bareessentials:block/cherry_blossom_planks"
+    }
+}
