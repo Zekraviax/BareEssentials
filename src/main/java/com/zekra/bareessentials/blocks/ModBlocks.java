@@ -32,21 +32,40 @@ public class ModBlocks {
 	public static Block SLATE;
 	
 	// Gemstone Blocks
-	@ObjectHolder("bareessentials:amethyst_block")
 	public static Block AMETHYST_BLOCK;
-	@ObjectHolder("bareessentials:bluegoldstone_block")
+	public static Block BLOODSTONE_BLOCK;
 	public static Block BLUEGOLDSTONE_BLOCK;
-	@ObjectHolder("bareessentials:emerald_block")
+	public static Block CALCITE_BLOCK;
+	public static Block CARNELIAN_BLOCK;
+	public static Block CITRINE_BLOCK;
 	public static Block EMERALD_BLOCK;
-	@ObjectHolder("bareessentials:garnet_block")
+	public static Block FLUORITE_BLOCK;
 	public static Block GARNET_BLOCK;
-	@ObjectHolder("bareessentials:goldstone_block")
 	public static Block GOLDSTONE_BLOCK;
-	@ObjectHolder("bareessentials:olivine_block")
+	public static Block JADE_BLOCK;
+	public static Block JASPER_BLOCK;
+	public static Block LABRADORITE_BLOCK;
+	public static Block LAPIS_BLOCK;
+	public static Block OBSIDIAN_BLOCK;
 	public static Block OLIVINE_BLOCK;
-	@ObjectHolder("bareessentials:ruby_block")
+	public static Block ONYX_BLOCK;
+	public static Block OPAL_BLACK_BLOCK;
+	public static Block OPAL_BOULDER_BLOCK;
+	public static Block OPAL_DRAGONBREATH_BLOCK;
+	public static Block OPAL_FIRE_BLOCK;
+	public static Block OPAL_LIGHTNING_BLOCK;
+	public static Block OPAL_WATER_BLOCK;
+	public static Block OPAL_WHITE_BLOCK;
+	public static Block PERIDOT_BLOCK;
+	public static Block QUARTZ_CLEAR_BLOCK;
+	public static Block QUARTZ_MILKY_BLOCK;
+	public static Block QUARTZ_ROSE_BLOCK;
+	public static Block QUARTZ_SMOKY_BLOCK;
 	public static Block RUBY_BLOCK;
-	@ObjectHolder("bareessentials:turquoise_block")
+	public static Block SAPPHIRE_BLOCK;
+	public static Block SELENITE_BLOCK;
+	public static Block SPINEL_BLOCK;
+	public static Block TIGERS_EYE_BLOCK;
 	public static Block TURQUOISE_BLOCK;
 	
 	// Wax Blocks

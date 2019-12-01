@@ -66,26 +66,44 @@ public class ModItems {
 	public static EssentialOreChunk ZINC_INGOT;
 	
 	// Gemstones
-	@ObjectHolder("bareessentials:amethyst")
 	public static EssentialGemstone AMETHYST;
-	@ObjectHolder("bareessentials:bluegoldstone")
+	public static EssentialGemstone BLOODSTONE;
 	public static EssentialGemstone BLUEGOLDSTONE;
-	@ObjectHolder("bareessentials:emerald")
+	public static EssentialGemstone CALCITE;
+	public static EssentialGemstone CARNELIAN;
+	public static EssentialGemstone CITRINE;
 	public static EssentialGemstone EMERALD;
-	@ObjectHolder("bareessentials:garnet")
+	public static EssentialGemstone FLUORITE;
 	public static EssentialGemstone GARNET;
-	@ObjectHolder("bareessentials:goldstone")
 	public static EssentialGemstone GOLDSTONE;
-	@ObjectHolder("bareessentials:olivine")
-	public static EssentialGemstone OLIVINE;
-	@ObjectHolder("bareessentials:ruby")
+	public static EssentialGemstone JADE;
+	public static EssentialGemstone JASPER;
+	public static EssentialGemstone LABRADORITE;
+	public static EssentialGemstone LAPIS;
+	public static EssentialGemstone OBSIDIAN;
+	//public static EssentialGemstone OLIVINE;
+	public static EssentialGemstone ONYX;
+	public static EssentialGemstone OPAL_BLACK;
+	public static EssentialGemstone OPAL_BOULDER;
+	public static EssentialGemstone OPAL_DRAGONBREATH;
+	public static EssentialGemstone OPAL_FIRE;
+	public static EssentialGemstone OPAL_LIGHTNING;
+	public static EssentialGemstone OPAL_WATER;
+	public static EssentialGemstone OPAL_WHITE;
+	public static EssentialGemstone PERIDOT;
+	public static EssentialGemstone QUARTZ_CLEAR;
+	public static EssentialGemstone QUARTZ_MILKY;
+	public static EssentialGemstone QUARTZ_ROSE;
+	public static EssentialGemstone QUARTZ_SMOKY;
 	public static EssentialGemstone RUBY;
-	@ObjectHolder("bareessentials:sapphire")
 	public static EssentialGemstone SAPPHIRE;
-	@ObjectHolder("bareessentials:turquoise")
+	public static EssentialGemstone SELENITE;
+	public static EssentialGemstone SPINEL;
+	public static EssentialGemstone TIGERS_EYE;
 	public static EssentialGemstone TURQUOISE;
 	
 	// Knives
+	public static EssentialKnife STONE_KNIFE;
 	
 	// Wax Flakes
 	@ObjectHolder("bareessentials:wax_flake_black")

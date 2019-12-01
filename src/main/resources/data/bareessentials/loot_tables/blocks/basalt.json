@@ -1,47 +1,26 @@
 {
     "pools": [
         {
+			"name": "pool",
             "rolls": 1,
             "entries": [
                 {
                     "type": "item",
-                    "weight": 30,
-                    "name": "bareessentials:rock"
-                },
-                {
-                    "type": "item",
-                    "weight": 30,
-                    "name": "minecraft:coal"
-                },
-                {
-                    "type": "item",
-                    "weight": 10,
-                    "name": "bareessentials:copper_chunk"
-                },
-                {
-                    "type": "item",
-                    "weight": 20,
-                    "name": "bareessentials:iron_chunk"
-                },
-                {
-                    "type": "item",
-                    "weight": 10,
-                    "name": "bareessentials:nickel_chunk"
+                    "weight": 50,
+                    "name": "bareessentials:iron_chunk",
+                    "quality": 1
                 },
                 {
                     "type": "item",
                     "weight": 1,
-                    "name": "bareessentials:titanium_chunk"
+                    "name": "bareessentials:ruby",
+                    "quality": 1
                 },
                 {
                     "type": "item",
-                    "weight": 5,
-                    "name": "bareessentials:lead_chunk"
-                },
-                {
-                    "type": "item",
-                    "weight": 20,
-                    "name": "bareessentials:zinc_chunk"
+                    "weight": 1,
+                    "name": "bareessentials:sapphire",
+                    "quality": 1
                 }
             ]
         }

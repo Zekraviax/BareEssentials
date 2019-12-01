@@ -1,71 +1,26 @@
 {
     "pools": [
         {
-			"name": "pool1",
-            "rolls": {
-                "min": 1,
-                "max": 2
-            },
+			"name": "pool",
+            "rolls": 1,
             "entries": [
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "bareessentials:rock",
-                    "quality": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.19
-                        }
-                    ]
+                    "weight": 75,
+                    "name": "bareessentials:aluminium_chunk",
+                    "quality": 1
                 },
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:coal",
-                    "quality": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.19
-                        }
-                    ]
+                    "weight": 50,
+                    "name": "bareessentials:garnet",
+                    "quality": 1
                 },
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "bareessentials:copper_chunk",
-                    "quality": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.09
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "bareessentials:iron_chunk",
-                    "quality": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.09
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "bareessentials:zinc_chunk",
-                    "quality": 1,
-                    "conditions": [
-                        {
-                            "condition": "random_chance",
-                            "chance": 0.19
-                        }
-                    ]
+                    "weight": 25,
+                    "name": "minecraft:diamond",
+                    "quality": 1
                 }
             ]
         }

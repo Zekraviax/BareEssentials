@@ -1,44 +1,7 @@
 {
-  "minecraft:recipes/redstone/dropper": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/clock": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/redstone_torch": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/piston": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/compass": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/note_block": {
-    "criteria": {
-      "has_redstone": "2019-11-29 16:13:22 +1100"
-    },
-    "done": true
-  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:forest": "2019-11-29 16:12:53 +1100",
-      "minecraft:mountains": "2019-11-29 16:12:46 +1100"
+      "minecraft:forest": "2019-11-30 15:29:44 +1100"
     },
     "done": false
   },
