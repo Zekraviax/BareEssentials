@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:labradorite_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:labradorite",
+    "count": 9
+  }
+}

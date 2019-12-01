@@ -47,7 +47,6 @@ public class ModBlocks {
 	public static Block LABRADORITE_BLOCK;
 	public static Block LAPIS_BLOCK;
 	public static Block OBSIDIAN_BLOCK;
-	public static Block OLIVINE_BLOCK;
 	public static Block ONYX_BLOCK;
 	public static Block OPAL_BLACK_BLOCK;
 	public static Block OPAL_BOULDER_BLOCK;

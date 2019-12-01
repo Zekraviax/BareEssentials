@@ -81,7 +81,6 @@ public class ModItems {
 	public static EssentialGemstone LABRADORITE;
 	public static EssentialGemstone LAPIS;
 	public static EssentialGemstone OBSIDIAN;
-	//public static EssentialGemstone OLIVINE;
 	public static EssentialGemstone ONYX;
 	public static EssentialGemstone OPAL_BLACK;
 	public static EssentialGemstone OPAL_BOULDER;

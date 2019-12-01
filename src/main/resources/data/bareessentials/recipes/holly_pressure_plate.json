@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "bareessentials:holly_planks"
+    }
+  },
+  "result": {
+    "item": "bareessentials:holly_pressure_plate"
+  }
+}

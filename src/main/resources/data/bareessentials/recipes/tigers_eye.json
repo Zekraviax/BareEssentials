@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:tigers_eye_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:tigers_eye",
+    "count": 9
+  }
+}

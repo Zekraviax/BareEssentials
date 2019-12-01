@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "bareessentials:banksia_planks"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:banksia_button"
+  }
+}

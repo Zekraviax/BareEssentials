@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:banksia_button",
+	"bareessentials:cherry_blossom_button",
+	"bareessentials:eucalyptus_button",
+	"bareessentials:gum_button",
+	"bareessentials:holly_button"
+  ]
+}

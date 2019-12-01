@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:selenite_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:selenite",
+    "count": 9
+  }
+}

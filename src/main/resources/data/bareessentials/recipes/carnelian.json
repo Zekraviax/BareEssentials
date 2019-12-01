@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:carnelian_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:carnelian",
+    "count": 9
+  }
+}

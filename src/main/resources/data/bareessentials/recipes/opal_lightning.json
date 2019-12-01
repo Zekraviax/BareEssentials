@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:opal_lightning_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:opal_lightning",
+    "count": 9
+  }
+}

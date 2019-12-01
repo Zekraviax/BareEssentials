@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:calcite_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:calcite",
+    "count": 9
+  }
+}

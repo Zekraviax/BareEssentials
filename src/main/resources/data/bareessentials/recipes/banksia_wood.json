@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "bareessentials:banksia_log"
+    }
+  },
+  "result": {
+    "item": "bareessentials:banksia_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "bareessentials:citrine"
+    }
+  },
+  "result": {
+    "item": "bareessentials:citrine_block"
+  }
+}

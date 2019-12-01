@@ -47,11 +47,6 @@
                     "type": "item",
                     "weight": 20,
                     "name": "bareessentials:garnet"
-                },
-                {
-                    "type": "item",
-                    "weight": 20,
-                    "name": "bareessentials:olivine"
                 }
             ]
         }

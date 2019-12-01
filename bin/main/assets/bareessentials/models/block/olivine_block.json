@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "bareessentials:block/olivine_block"
-	}
-}

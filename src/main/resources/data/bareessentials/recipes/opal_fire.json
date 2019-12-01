@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:opal_fire_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:opal_fire",
+    "count": 9
+  }
+}

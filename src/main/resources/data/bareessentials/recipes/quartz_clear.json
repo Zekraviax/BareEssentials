@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:quartz_clear_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:quartz_clear",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:jade_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:jade",
+    "count": 9
+  }
+}

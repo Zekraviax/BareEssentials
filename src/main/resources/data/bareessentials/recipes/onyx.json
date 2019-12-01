@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bareessentials:onyx_block"
+    }
+  ],
+  "result": {
+    "item": "bareessentials:onyx",
+    "count": 9
+  }
+}

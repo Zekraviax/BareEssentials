@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bareessentials:banksia_planks"
+    }
+  },
+  "result": {
+    "item": "bareessentials:banksia_trapdoor",
+    "count": 2
+  }
+}
