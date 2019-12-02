@@ -1,5 +1,6 @@
 package com.zekra.bareessentials.items;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -101,9 +102,6 @@ public class ModItems {
 	public static EssentialGemstone TIGERS_EYE;
 	public static EssentialGemstone TURQUOISE;
 	
-	// Knives
-	public static EssentialKnife STONE_KNIFE;
-	
 	// Wax Flakes
 	@ObjectHolder("bareessentials:wax_flake_black")
 	public static WaxFlake WAX_FLAKE_BLACK;
@@ -141,13 +139,29 @@ public class ModItems {
 	public static WaxFlake WAX_FLAKE_YELLOW;
 	
 	// Tools
-	// TItanium
+	// Knives
+	public static EssentialKnife STONE_KNIFE;
+	// Titanium
 	public static PickaxeItem TITANIUM_PICKAXE;
 	
-	
-	// Other
-	@ObjectHolder("bareessentials:fossil")
+	// Pebbles
+	public static Item ANDESITE_PEBBLE;
+	public static Item BASALT_PEBBLE;
+	public static Item DIORITE_PEBBLE;
+	public static Item GABBRO_PEBBLE;
+	public static Item GNEISS_PEBBLE;
+	public static Item GRANITE_PEBBLE;
+	public static Item GYPSUM_PEBBLE;
+	public static Item LIMESTONE_PEBBLE;
+	public static Item MARBLE_PEBBLE;
+	public static Item PUMICE_PEBBLE;
+	public static Item QUARTZITE_PEBBLE;
+	public static Item RHYOLITE_PEBBLE;
+	public static Item SANDSTONE_PEBBLE;
+	public static Item SANDSTONE_RED_PEBBLE;
+	public static Item SCHIST_PEBBLE;
+	public static Item SHALE_PEBBLE;
+	public static Item SLATE_PEBBLE;
 	public static EssentialGemstone FOSSIL;
-	@ObjectHolder("bareessentials:rock")
 	public static EssentialGemstone ROCK;
 }

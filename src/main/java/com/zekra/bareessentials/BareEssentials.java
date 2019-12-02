@@ -33,6 +33,7 @@ import com.zekra.bareessentials.setup.ModSetup;
 import com.zekra.bareessentials.world.OreGeneration;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.Block.Properties;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.LeavesBlock;
@@ -53,6 +54,7 @@ import net.minecraftforge.client.event.ModelBakeEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -101,23 +103,45 @@ public class BareEssentials {
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event)
 		{
+			Properties metalProperties = Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.5f, 6.0f).harvestTool(ToolType.PICKAXE).harvestLevel(2);
+			
 			event.getRegistry().registerAll
 			(
-				// Raw Ore blocks
+				// Raw Ore
 				ModBlocks.BASALT = new EssentialOre().setRegistryName(MOD_ID, "basalt"),
 				ModBlocks.BRECCIA = new EssentialOre().setRegistryName(MOD_ID, "breccia"),
 				ModBlocks.CONGLOMERATE = new EssentialOre().setRegistryName(MOD_ID, "conglomerate"),
 				ModBlocks.GABBRO = new EssentialOre().setRegistryName(MOD_ID, "gabbro"),
 				ModBlocks.GNEISS = new EssentialOre().setRegistryName(MOD_ID, "gneiss"),
+				ModBlocks.GYPSUM = new EssentialOre().setRegistryName(MOD_ID, "gypsum"),
 				ModBlocks.LIMESTONE = new EssentialOre().setRegistryName(MOD_ID, "limestone"),
 				ModBlocks.MARBLE = new EssentialOre().setRegistryName(MOD_ID, "marble"),
 				ModBlocks.PUMICE = new EssentialOre().setRegistryName(MOD_ID, "pumice"),
 				ModBlocks.QUARTZITE = new EssentialOre().setRegistryName(MOD_ID, "quartzite"),
+				ModBlocks.RHYOLITE = new EssentialOre().setRegistryName(MOD_ID, "rhyolite"),
 				ModBlocks.SCHIST = new EssentialOre().setRegistryName(MOD_ID, "schist"),
 				ModBlocks.SHALE = new EssentialOre().setRegistryName(MOD_ID, "shale"),
 				ModBlocks.SLATE = new EssentialOre().setRegistryName(MOD_ID, "slate"),
 				
-				// Gemstone blocks
+				// Metals
+				ModBlocks.ALUMINIUM_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "aluminium_block"),
+				ModBlocks.BRASS_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "brass_block"),
+				ModBlocks.BRONZE_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "bronze_block"),
+				ModBlocks.COPPER_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "copper_block"),
+				ModBlocks.GOLD_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "gold_block"),
+				ModBlocks.IRON_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "iron_block"),
+				ModBlocks.LEAD_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "lead_block"),
+				ModBlocks.MANGANESE_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "manganese_block"),
+				ModBlocks.NICKEL_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "nickel_block"),
+				ModBlocks.PLATINUM_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "platinum_block"),
+				ModBlocks.SILVER_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "silver_block"),
+				ModBlocks.STEEL_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "steel_block"),
+				ModBlocks.TIN_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "tin_block"),
+				ModBlocks.TITANIUM_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "titanium_block"),
+				ModBlocks.TUNGSTEN_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "tungsten_block"),
+				ModBlocks.ZINC_BLOCK = new Block(metalProperties).setRegistryName(MOD_ID, "zinc_block"),
+				
+				// Gemstone
 				ModBlocks.AMETHYST_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "amethyst_block"),
 				ModBlocks.BLOODSTONE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "bloodstone_block"),
 				ModBlocks.BLUEGOLDSTONE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "bluegoldstone_block"),
@@ -153,7 +177,7 @@ public class BareEssentials {
 				ModBlocks.TIGERS_EYE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "tigers_eye_block"),
 				ModBlocks.TURQUOISE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "turquoise_block"),
 				
-				// Wax Blocks
+				// Wax
 				ModBlocks.WAX_BLOCK_BLACK = new WaxBlock().setRegistryName(MOD_ID, "wax_block_black"),
 				ModBlocks.WAX_BLOCK_BLUE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_blue"),
 				ModBlocks.WAX_BLOCK_BROWN = new WaxBlock().setRegistryName(MOD_ID, "wax_block_brown"),
@@ -172,7 +196,7 @@ public class BareEssentials {
 				ModBlocks.WAX_BLOCK_WHITE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_white"),
 				ModBlocks.WAX_BLOCK_YELLOW = new WaxBlock().setRegistryName(MOD_ID, "wax_block_yellow"),
 				
-				// Crystal Blocks
+				// Crystal
 				ModBlocks.BORNITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "bornite_crystal"),
 				ModBlocks.CASSITERITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cassiterite_crystal"),
 				ModBlocks.CINNABAR_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cinnabar_crystal"),
@@ -291,10 +315,12 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.CONGLOMERATE, properties).setRegistryName("conglomerate"),
 				new BlockItem(ModBlocks.GABBRO, properties).setRegistryName("gabbro"),
 				new BlockItem(ModBlocks.GNEISS, properties).setRegistryName("gneiss"),
+				new BlockItem(ModBlocks.GYPSUM, properties).setRegistryName("gypsum"),
 				new BlockItem(ModBlocks.LIMESTONE, properties).setRegistryName("limestone"),
 				new BlockItem(ModBlocks.MARBLE, properties).setRegistryName("marble"),
 				new BlockItem(ModBlocks.PUMICE, properties).setRegistryName("pumice"),
 				new BlockItem(ModBlocks.QUARTZITE, properties).setRegistryName("quartzite"),
+				new BlockItem(ModBlocks.RHYOLITE, properties).setRegistryName("rhyolite"),
 				new BlockItem(ModBlocks.SCHIST, properties).setRegistryName("schist"),
 				new BlockItem(ModBlocks.SHALE, properties).setRegistryName("shale"),
 				new BlockItem(ModBlocks.SLATE, properties).setRegistryName("slate"),
@@ -330,6 +356,22 @@ public class BareEssentials {
 				ModItems.TITANIUM_INGOT = (EssentialOreChunk) new EssentialOreChunk(properties).setRegistryName("titanium_ingot"),
 				ModItems.TUNGSTEN_INGOT = (EssentialOreChunk) new EssentialOreChunk(properties).setRegistryName("tungsten_ingot"),
 				ModItems.ZINC_INGOT = (EssentialOreChunk) new EssentialOreChunk(properties).setRegistryName("zinc_ingot"),
+				
+				// Metal Blocks
+				new BlockItem(ModBlocks.ALUMINIUM_BLOCK, properties).setRegistryName("aluminium_block"),
+				new BlockItem(ModBlocks.BRASS_BLOCK, properties).setRegistryName("brass_block"),
+				new BlockItem(ModBlocks.BRONZE_BLOCK, properties).setRegistryName("bronze_block"),
+				new BlockItem(ModBlocks.COPPER_BLOCK, properties).setRegistryName("copper_block"),
+				new BlockItem(ModBlocks.LEAD_BLOCK, properties).setRegistryName("lead_block"),
+				new BlockItem(ModBlocks.MANGANESE_BLOCK, properties).setRegistryName("manganese_block"),
+				new BlockItem(ModBlocks.NICKEL_BLOCK, properties).setRegistryName("nickel_block"),
+				new BlockItem(ModBlocks.PLATINUM_BLOCK, properties).setRegistryName("platinum_block"),
+				new BlockItem(ModBlocks.SILVER_BLOCK, properties).setRegistryName("silver_block"),
+				new BlockItem(ModBlocks.STEEL_BLOCK, properties).setRegistryName("steel_block"),
+				new BlockItem(ModBlocks.TIN_BLOCK, properties).setRegistryName("tin_block"),
+				new BlockItem(ModBlocks.TITANIUM_BLOCK, properties).setRegistryName("titanium_block"),
+				new BlockItem(ModBlocks.TUNGSTEN_BLOCK, properties).setRegistryName("tungsten_block"),
+				new BlockItem(ModBlocks.ZINC_BLOCK, properties).setRegistryName("zinc_block"),
 				
 				// Gemstones
 				ModItems.AMETHYST = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("amethyst"),
@@ -543,7 +585,6 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.HOLLY_WOOD, properties).setRegistryName("holly_wood"),
 				new BlockItem(ModBlocks.STRIPPED_HOLLY_LOG, properties).setRegistryName("stripped_holly_log"),
 				new BlockItem(ModBlocks.STRIPPED_HOLLY_WOOD, properties).setRegistryName("stripped_holly_wood"),
-				//Items.ACACIA_SIGN
 				
 				// Knives
 				ModItems.STONE_KNIFE =  (EssentialKnife) new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),
@@ -552,7 +593,23 @@ public class BareEssentials {
 				//Items.DIAMOND_PICKAXE
 				ModItems.TITANIUM_PICKAXE = (PickaxeItem) new PickaxeItem(Essential_ItemTiers.TITANIUM, 0, 0.f, properties).setRegistryName("titanium_pickaxe"),
 				
-				// Other
+				// Pebbles
+				ModItems.ANDESITE_PEBBLE = new EssentialGemstone(properties).setRegistryName("andesite_pebble"),
+				ModItems.BASALT_PEBBLE = new EssentialGemstone(properties).setRegistryName("basalt_pebble"),
+				ModItems.DIORITE_PEBBLE = new EssentialGemstone(properties).setRegistryName("diorite_pebble"),
+				ModItems.GABBRO_PEBBLE = new EssentialGemstone(properties).setRegistryName("gabbro_pebble"),
+				ModItems.GRANITE_PEBBLE = new EssentialGemstone(properties).setRegistryName("granite_pebble"),
+				ModItems.GYPSUM_PEBBLE = new EssentialGemstone(properties).setRegistryName("gypsum_pebble"),
+				ModItems.LIMESTONE_PEBBLE = new EssentialGemstone(properties).setRegistryName("limestone_pebble"),
+				ModItems.MARBLE_PEBBLE = new EssentialGemstone(properties).setRegistryName("marble_pebble"),
+				ModItems.PUMICE_PEBBLE = new EssentialGemstone(properties).setRegistryName("pumice_pebble"),
+				ModItems.QUARTZITE_PEBBLE = new EssentialGemstone(properties).setRegistryName("quartzite_pebble"),
+				ModItems.RHYOLITE_PEBBLE = new EssentialGemstone(properties).setRegistryName("rhyolite_pebble"),
+				ModItems.SANDSTONE_PEBBLE = new EssentialGemstone(properties).setRegistryName("sandstone_pebble"),
+				ModItems.SANDSTONE_RED_PEBBLE = new EssentialGemstone(properties).setRegistryName("sandstone_red_pebble"),
+				ModItems.SCHIST_PEBBLE = new EssentialGemstone(properties).setRegistryName("schist_pebble"),
+				ModItems.SHALE_PEBBLE = new EssentialGemstone(properties).setRegistryName("shale_pebble"),
+				ModItems.SLATE_PEBBLE = new EssentialGemstone(properties).setRegistryName("slate_pebble"),
 				ModItems.FOSSIL = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("fossil"),
 				ModItems.ROCK = (EssentialGemstone) new EssentialGemstone(properties).setRegistryName("rock")
 				

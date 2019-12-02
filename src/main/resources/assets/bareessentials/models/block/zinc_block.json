@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "bareessentials:block/zinc_block"
+	}
+}

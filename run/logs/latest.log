@@ -1,92 +1,84 @@
-[01Dec2019 19:13:08.389] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.96, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\zekra\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[01Dec2019 19:13:08.394] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_181 by Oracle Corporation
-[01Dec2019 19:13:09.108] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[01Dec2019 19:13:10.821] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\zekra\.gradle\caches\forge_gradle\assets, --assetIndex, 1.14, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[01Dec2019 19:13:14.653] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[01Dec2019 19:13:31.665] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
-[01Dec2019 19:13:31.734] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
-[01Dec2019 19:13:33.499] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.1.96, for MC 1.14.4 with MCP 20190829.143755
-[01Dec2019 19:13:33.500] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.1.96 Initialized
-[01Dec2019 19:13:37.300] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[01Dec2019 19:13:37.448] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
-[01Dec2019 19:13:39.371] [modloading-worker-4/INFO] [net.minecraftforge.client.model.obj.OBJLoader/]: OBJLoader: Domain bareessentials has been added.
-[01Dec2019 19:13:39.384] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[01Dec2019 19:13:40.929] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.1.96 Target: null
-[01Dec2019 19:13:43.053] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.Parser: command 's' (model: 'bareessentials:models/block/crystals/bornite_crystal_two.obj') is not currently supported, skipping. Line: 68 's off'
-[01Dec2019 19:13:43.157] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Bornite' in 'bareessentials:models/block/crystal_one.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.158] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.158] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.158] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.158] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Scheelite' in 'bareessentials:models/block/crystal_one.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.161] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.161] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_two.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.161] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.161] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.161] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.163] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.163] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_three.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.163] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.163] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.163] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.165] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.166] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_four.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.166] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.166] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.166] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.170] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.171] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_five.mtl'. The color defined by key 'Ks' will not be applied!
-[01Dec2019 19:13:43.171] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.171] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
-[01Dec2019 19:13:43.171] [Server-Worker-5/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
-[01Dec2019 19:13:44.419] [Server-Worker-5/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'bareessentials:titanium_pickaxe#inventory' referenced from: bareessentials:titanium_pickaxe#inventory: java.io.FileNotFoundException: bareessentials:models/item/titanium_pickaxe.json
-[01Dec2019 19:13:46.111] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
-[01Dec2019 19:13:46.301] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[01Dec2019 19:13:46.303] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[01Dec2019 19:13:46.611] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512 textures-atlas
-[01Dec2019 19:13:47.507] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
-[01Dec2019 19:13:47.509] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
-[01Dec2019 19:13:47.510] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
-[01Dec2019 19:13:48.633] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[01Dec2019 19:13:58.585] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[01Dec2019 19:13:58.586] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[01Dec2019 19:13:58.587] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[01Dec2019 19:13:58.587] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[01Dec2019 19:13:58.588] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[01Dec2019 19:13:58.744] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.14.4
-[01Dec2019 19:13:58.745] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
-[01Dec2019 19:13:58.849] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
-[01Dec2019 19:13:59.018] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
-[01Dec2019 19:13:59.427] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.14.4-28.1.96_mapped_snapshot_20190719-1.14.3-recomp.jar
-[01Dec2019 19:14:00.988] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
-[01Dec2019 19:14:02.646] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 811 advancements
-[01Dec2019 19:14:03.103] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[01Dec2019 19:14:04.543] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[01Dec2019 19:14:04.543] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[01Dec2019 19:14:04.543] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[01Dec2019 19:14:04.676] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[01Dec2019 19:14:06.977] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[01Dec2019 19:14:06.977] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[01Dec2019 19:14:06.977] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[01Dec2019 19:14:06.977] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[01Dec2019 19:14:07.143] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[01Dec2019 19:14:07.643] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 91%
-[01Dec2019 19:14:08.246] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 91%
-[01Dec2019 19:14:08.643] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 92%
-[01Dec2019 19:14:09.144] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 93%
-[01Dec2019 19:14:09.611] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 96%
-[01Dec2019 19:14:10.143] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 99%
-[01Dec2019 19:14:10.276] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 7166 ms
-[01Dec2019 19:14:11.046] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01Dec2019 19:14:11.047] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01Dec2019 19:14:13.296] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[01Dec2019 19:14:13.918] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:db782a87] logged in with entity id 234 at (-280.3183155800645, 64.0, -138.21364281305725)
-[01Dec2019 19:14:13.947] [Client thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
-[01Dec2019 19:14:13.953] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[01Dec2019 19:14:14.430] [Server thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
-[01Dec2019 19:14:14.431] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[01Dec2019 19:14:14.564] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[01Dec2019 19:14:14.862] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 4 advancements
-[01Dec2019 19:14:15.557] [pool-3-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@d0a93ea[id=380df991-f603-344c-a090-369bad2a924a,name=Dev,properties={},legacy=false]
+[02Dec2019 16:08:26.480] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.96, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\zekra\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[02Dec2019 16:08:26.486] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_181 by Oracle Corporation
+[02Dec2019 16:08:27.468] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[02Dec2019 16:08:29.237] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\zekra\.gradle\caches\forge_gradle\assets, --assetIndex, 1.14, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[02Dec2019 16:08:33.433] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[02Dec2019 16:08:52.978] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[02Dec2019 16:08:53.204] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[02Dec2019 16:08:55.816] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.1.96, for MC 1.14.4 with MCP 20190829.143755
+[02Dec2019 16:08:55.817] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.1.96 Initialized
+[02Dec2019 16:08:59.833] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[02Dec2019 16:09:00.001] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[02Dec2019 16:09:02.422] [modloading-worker-2/INFO] [net.minecraftforge.client.model.obj.OBJLoader/]: OBJLoader: Domain bareessentials has been added.
+[02Dec2019 16:09:02.432] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[02Dec2019 16:09:03.735] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.1.96 Target: null
+[02Dec2019 16:09:06.547] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.Parser: command 's' (model: 'bareessentials:models/block/crystals/bornite_crystal_two.obj') is not currently supported, skipping. Line: 68 's off'
+[02Dec2019 16:09:06.681] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Bornite' in 'bareessentials:models/block/crystal_one.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.681] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.681] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.681] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_one.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.681] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Scheelite' in 'bareessentials:models/block/crystal_one.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.684] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.684] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_two.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.685] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.685] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.685] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_two.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.687] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.687] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_three.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.687] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.687] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.687] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_three.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.690] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.690] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_four.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.690] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.690] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.690] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_four.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.694] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ns' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.694] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJModel: A color has already been defined for material 'Material' in 'bareessentials:models/block/crystal_five.mtl'. The color defined by key 'Ks' will not be applied!
+[02Dec2019 16:09:06.694] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ke' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.694] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'Ni' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
+[02Dec2019 16:09:06.694] [Server-Worker-7/INFO] [net.minecraftforge.client.model.obj.OBJModel/]: OBJLoader.MaterialLibrary: key 'illum' (model: 'bareessentials:models/block/crystal_five.mtl') is not currently supported, skipping
+[02Dec2019 16:09:08.042] [Server-Worker-7/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'bareessentials:titanium_pickaxe#inventory' referenced from: bareessentials:titanium_pickaxe#inventory: java.io.FileNotFoundException: bareessentials:models/item/titanium_pickaxe.json
+[02Dec2019 16:09:08.474] [Server-Worker-5/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load bareessentials:textures/block/gold_block.png : java.io.FileNotFoundException: bareessentials:textures/block/gold_block.png
+[02Dec2019 16:09:10.012] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[02Dec2019 16:09:10.174] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[02Dec2019 16:09:10.175] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[02Dec2019 16:09:10.485] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512 textures-atlas
+[02Dec2019 16:09:11.430] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[02Dec2019 16:09:11.431] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[02Dec2019 16:09:11.432] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
+[02Dec2019 16:09:12.594] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[02Dec2019 16:09:23.093] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02Dec2019 16:09:23.094] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Dec2019 16:09:23.095] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Dec2019 16:09:23.095] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02Dec2019 16:09:23.096] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02Dec2019 16:09:23.247] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.14.4
+[02Dec2019 16:09:23.248] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[02Dec2019 16:09:23.376] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[02Dec2019 16:09:23.487] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[02Dec2019 16:09:23.855] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.14.4-28.1.96_mapped_snapshot_20190719-1.14.3-recomp.jar
+[02Dec2019 16:09:25.518] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[02Dec2019 16:09:27.048] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 811 advancements
+[02Dec2019 16:09:27.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[02Dec2019 16:09:28.726] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[02Dec2019 16:09:28.726] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[02Dec2019 16:09:28.726] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[02Dec2019 16:09:28.862] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[02Dec2019 16:09:29.476] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 91%
+[02Dec2019 16:09:29.876] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 94%
+[02Dec2019 16:09:30.110] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 2750 ms
+[02Dec2019 16:09:30.409] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02Dec2019 16:09:30.410] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02Dec2019 16:09:33.187] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[02Dec2019 16:09:33.451] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:8dbfc102] logged in with entity id 165 at (-84.68294412729944, 10.609375512056273, 93.97929528945151)
+[02Dec2019 16:09:33.485] [Client thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[02Dec2019 16:09:33.511] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[02Dec2019 16:09:33.960] [Server thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[02Dec2019 16:09:33.960] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[02Dec2019 16:09:34.067] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[02Dec2019 16:09:34.205] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
+[02Dec2019 16:09:35.378] [pool-3-thread-1/WARN] [com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService/]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@9fd9522[id=380df991-f603-344c-a090-369bad2a924a,name=Dev,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[authlib-1.5.25.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) ~[authlib-1.5.25.jar:?]
@@ -108,24 +100,23 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_181]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_181]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
-[01Dec2019 19:14:16.606] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3126ms or 62 ticks behind
-[01Dec2019 19:14:16.982] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[01Dec2019 19:14:17.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[01Dec2019 19:14:22.946] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[01Dec2019 19:14:22.967] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Creative Mode
-[01Dec2019 19:14:45.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[01Dec2019 19:14:45.478] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Survival Mode
-[01Dec2019 19:14:57.630] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[01Dec2019 19:14:57.664] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[01Dec2019 19:15:05.831] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[01Dec2019 19:15:05.865] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[01Dec2019 19:15:06.322] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[01Dec2019 19:15:06.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[01Dec2019 19:15:06.339] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[01Dec2019 19:15:06.391] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[01Dec2019 19:15:06.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[01Dec2019 19:15:06.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[01Dec2019 19:15:06.392] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[01Dec2019 19:15:06.712] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[01Dec2019 19:15:06.736] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[01Dec2019 19:15:07.346] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[02Dec2019 16:09:35.506] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2123ms or 42 ticks behind
+[02Dec2019 16:17:48.880] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2 advancements
+[02Dec2019 16:18:02.689] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 4 advancements
+[02Dec2019 16:18:08.455] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 5 advancements
+[02Dec2019 16:27:01.333] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[02Dec2019 16:27:01.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[02Dec2019 16:40:14.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set the time to 1000]
+[02Dec2019 16:40:14.358] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set the time to 1000
+[02Dec2019 16:40:25.984] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[02Dec2019 16:40:26.014] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[02Dec2019 16:41:15.038] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[02Dec2019 16:41:15.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[02Dec2019 16:41:15.266] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[02Dec2019 16:41:15.285] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[02Dec2019 16:41:15.286] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[02Dec2019 16:41:15.286] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[02Dec2019 16:41:15.286] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[02Dec2019 16:41:15.429] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[02Dec2019 16:41:15.457] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[02Dec2019 16:41:15.988] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

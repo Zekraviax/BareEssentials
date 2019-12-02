@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "bareessentials:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "bareessentials:silver_block"
+  }
+}

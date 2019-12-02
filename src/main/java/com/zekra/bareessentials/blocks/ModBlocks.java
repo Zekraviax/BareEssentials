@@ -6,32 +6,40 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder("bareessentials")
 public class ModBlocks {
 	// Ore
-	@ObjectHolder("bareessentials:basalt")
 	public static Block BASALT;
-	@ObjectHolder("bareessentials:breccia")
 	public static Block BRECCIA;
-	@ObjectHolder("bareessentials:conglomerate")
 	public static Block CONGLOMERATE;
-	@ObjectHolder("bareessentials:gabbro")
 	public static Block GABBRO;
-	@ObjectHolder("bareessentials:gneiss")
 	public static Block GNEISS;
-	@ObjectHolder("bareessentials:limestone")
+	public static Block GYPSUM;
 	public static Block LIMESTONE;
-	@ObjectHolder("bareessentials:marble")
 	public static Block MARBLE;
-	@ObjectHolder("bareessentials:pumice")
 	public static Block PUMICE;
-	@ObjectHolder("bareessentials:quartzite")
 	public static Block QUARTZITE;
-	@ObjectHolder("bareessentials:schist")
+	public static Block RHYOLITE;
 	public static Block SCHIST;
-	@ObjectHolder("bareessentials:shale")
 	public static Block SHALE;
-	@ObjectHolder("bareessentials:slate")
 	public static Block SLATE;
 	
-	// Gemstone Blocks
+	// Metal
+	public static Block ALUMINIUM_BLOCK;
+	public static Block BRASS_BLOCK;
+	public static Block BRONZE_BLOCK;
+	public static Block COPPER_BLOCK;
+	public static Block GOLD_BLOCK;
+	public static Block IRON_BLOCK;
+	public static Block LEAD_BLOCK;
+	public static Block MANGANESE_BLOCK;
+	public static Block NICKEL_BLOCK;
+	public static Block PLATINUM_BLOCK;
+	public static Block SILVER_BLOCK;
+	public static Block STEEL_BLOCK;
+	public static Block TIN_BLOCK;
+	public static Block TITANIUM_BLOCK;
+	public static Block TUNGSTEN_BLOCK;
+	public static Block ZINC_BLOCK;
+	
+	// Gemstone
 	public static Block AMETHYST_BLOCK;
 	public static Block BLOODSTONE_BLOCK;
 	public static Block BLUEGOLDSTONE_BLOCK;
@@ -67,43 +75,26 @@ public class ModBlocks {
 	public static Block TIGERS_EYE_BLOCK;
 	public static Block TURQUOISE_BLOCK;
 	
-	// Wax Blocks
-	@ObjectHolder("bareessentials:wax_block_black")
+	// Wax
 	public static Block WAX_BLOCK_BLACK;
-	@ObjectHolder("bareessentials:wax_block_blue")
 	public static Block WAX_BLOCK_BLUE;
-	@ObjectHolder("bareessentials:wax_block_brown")
 	public static Block WAX_BLOCK_BROWN;
-	@ObjectHolder("bareessentials:wax_block_cream")
 	public static Block WAX_BLOCK_CREAM;
-	@ObjectHolder("bareessentials:wax_block_cyan")
 	public static Block WAX_BLOCK_CYAN;
-	@ObjectHolder("bareessentials:wax_block_gray")
 	public static Block WAX_BLOCK_GRAY;
-	@ObjectHolder("bareessentials:wax_block_green")
 	public static Block WAX_BLOCK_GREEN;
-	@ObjectHolder("bareessentials:wax_block_light_blue")
 	public static Block WAX_BLOCK_LIGHT_BLUE;
-	@ObjectHolder("bareessentials:wax_block_light_gray")
 	public static Block WAX_BLOCK_LIGHT_GRAY;
-	@ObjectHolder("bareessentials:wax_block_lime")
 	public static Block WAX_BLOCK_LIME;
-	@ObjectHolder("bareessentials:wax_block_magenta")
 	public static Block WAX_BLOCK_MAGENTA;
-	@ObjectHolder("bareessentials:wax_block_orange")
 	public static Block WAX_BLOCK_ORANGE;
-	@ObjectHolder("bareessentials:wax_block_pink")
 	public static Block WAX_BLOCK_PINK;
-	@ObjectHolder("bareessentials:wax_block_purple")
 	public static Block WAX_BLOCK_PURPLE;
-	@ObjectHolder("bareessentials:wax_block_red")
 	public static Block WAX_BLOCK_RED;
-	@ObjectHolder("bareessentials:wax_block_white")
 	public static Block WAX_BLOCK_WHITE;
-	@ObjectHolder("bareessentials:wax_block_yellow")
 	public static Block WAX_BLOCK_YELLOW;
 	
-	// Liquid Blocks
+	// Liquid
 	public static final Block LIQUID_WAX_BLOCK_BLACK = null;
 	public static final Block LIQUID_WAX_BLOCK_BLUE = null;
 	public static final Block LIQUID_WAX_BLOCK_BROWN = null;

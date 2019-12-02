@@ -1,25 +1,31 @@
 {
-  "minecraft:recipes/misc/charcoal": {
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
     "criteria": {
-      "has_log": "2019-12-01 18:23:34 +1100"
+      "has_iron_block": "2019-12-02 16:18:02 +1100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2019-12-02 16:18:02 +1100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_gold_block": {
+    "criteria": {
+      "has_gold_block": "2019-12-02 16:18:08 +1100"
     },
     "done": true
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2019-12-01 19:00:48 +1100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/barrel": {
-    "criteria": {
-      "has_wood_slab": "2019-12-01 18:07:10 +1100"
+      "has_lots_of_items": "2019-12-02 16:17:48 +1100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:forest": "2019-12-01 17:48:55 +1100"
+      "minecraft:plains": "2019-12-02 15:58:25 +1100"
     },
     "done": false
   },

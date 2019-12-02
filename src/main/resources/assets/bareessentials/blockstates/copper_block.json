@@ -1,0 +1,6 @@
+{
+    "variants": 
+	{
+        "": { "model": "bareessentials:block/copper_block" }
+    }
+}

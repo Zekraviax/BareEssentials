@@ -1,0 +1,6 @@
+{
+    "variants": 
+	{
+        "": { "model": "bareessentials:block/steel_block" }
+    }
+}

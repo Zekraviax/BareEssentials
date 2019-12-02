@@ -1,0 +1,47 @@
+{
+    "pools": [
+        {
+     	 	"rolls": {
+        		"min": 0,
+        		"max": 1
+      		},
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 75,
+                    "name": "bareessentials:rhyolite_pebble"
+                },
+                {
+                    "type": "item",
+                    "weight": 50,
+                    "name": "bareessentials:citrine"
+                },
+                {
+                    "type": "item",
+                    "weight": 50,
+                    "name": "bareessentials:obsidian"
+                },
+                {
+                    "type": "item",
+                    "weight": 50,
+                    "name": "bareessentials:onyx"
+                },
+                {
+                    "type": "item",
+                    "weight": 50,
+                    "name": "bareessentials:quartz_rose"
+                },
+                {
+                    "type": "item",
+                    "weight": 25,
+                    "name": "bareessentials:opal_fire"
+                },
+                {
+                    "type": "item",
+                    "weight": 25,
+                    "name": "bareessentials:opal_white"
+                }
+            ]
+        }
+    ]
+}
