@@ -75,7 +75,7 @@ public class ModBlocks {
 	public static Block TIGERS_EYE_BLOCK;
 	public static Block TURQUOISE_BLOCK;
 	
-	// Wax
+	// Wax Blocks
 	public static Block WAX_BLOCK_BLACK;
 	public static Block WAX_BLOCK_BLUE;
 	public static Block WAX_BLOCK_BROWN;
@@ -93,6 +93,25 @@ public class ModBlocks {
 	public static Block WAX_BLOCK_RED;
 	public static Block WAX_BLOCK_WHITE;
 	public static Block WAX_BLOCK_YELLOW;
+
+	// Wax Sheets
+	public static Block WAX_SHEET_BLACK;
+	public static Block WAX_SHEET_BLUE;
+	public static Block WAX_SHEET_BROWN;
+	public static Block WAX_SHEET_CREAM;
+	public static Block WAX_SHEET_CYAN;
+	public static Block WAX_SHEET_GRAY;
+	public static Block WAX_SHEET_GREEN;
+	public static Block WAX_SHEET_LIGHT_BLUE;
+	public static Block WAX_SHEET_LIGHT_GRAY;
+	public static Block WAX_SHEET_LIME;
+	public static Block WAX_SHEET_MAGENTA;
+	public static Block WAX_SHEET_ORANGE;
+	public static Block WAX_SHEET_PINK;
+	public static Block WAX_SHEET_PURPLE;
+	public static Block WAX_SHEET_RED;
+	public static Block WAX_SHEET_WHITE;
+	public static Block WAX_SHEET_YELLOW;
 	
 	// Liquid
 	public static final Block LIQUID_WAX_BLOCK_BLACK = null;

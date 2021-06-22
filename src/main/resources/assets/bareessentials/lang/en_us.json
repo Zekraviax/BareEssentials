@@ -200,8 +200,27 @@
 	"block.bareessentials.wax_block_red": "Red Wax Block",
 	"block.bareessentials.wax_block_white": "White Wax Block",
 	"block.bareessentials.wax_block_yellow": "Yellow Wax Block",
-	
-	
+
+
+	"block.bareessentials.wax_sheet_black": "Black Wax Sheet",
+	"block.bareessentials.wax_sheet_blue": "Blue Wax Sheet",
+	"block.bareessentials.wax_sheet_brown": "Brown Wax Sheet",
+	"block.bareessentials.wax_sheet_cream": "Cream Wax Sheet",
+	"block.bareessentials.wax_sheet_cyan": "Cyan Wax Sheet",
+	"block.bareessentials.wax_sheet_gray": "Gray Wax Sheet",
+	"block.bareessentials.wax_sheet_green": "Green Wax Sheet",
+	"block.bareessentials.wax_sheet_light_blue": "Light Blue Wax Sheet",
+	"block.bareessentials.wax_sheet_light_gray": "Light Gray Wax Sheet",
+	"block.bareessentials.wax_sheet_lime": "Lime Wax Sheet",
+	"block.bareessentials.wax_sheet_magenta": "Magenta Wax Sheet",
+	"block.bareessentials.wax_sheet_orange": "Orange Wax Sheet",
+	"block.bareessentials.wax_sheet_pink": "Pink Wax Sheet",
+	"block.bareessentials.wax_sheet_purple": "Purple Wax Sheet",
+	"block.bareessentials.wax_sheet_red": "Red Wax Sheet",
+	"block.bareessentials.wax_sheet_white": "White Wax Sheet",
+	"block.bareessentials.wax_sheet_yellow": "Yellow Wax Sheet",
+
+
 	"item.bareessentials.liquid_wax_bucket_black": "Black Liquid Wax Bucket",
 	"item.bareessentials.liquid_wax_bucket_blue": "Blue Liquid Wax Bucket",
 	"item.bareessentials.liquid_wax_bucket_brown": "Brown Liquid Wax Bucket",

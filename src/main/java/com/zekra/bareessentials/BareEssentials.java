@@ -1,21 +1,11 @@
 package com.zekra.bareessentials;
 
+import com.zekra.bareessentials.blocks.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.zekra.bareessentials.biomes.EssentialBiomes;
 import com.zekra.bareessentials.biomes.OutbackTest;
-import com.zekra.bareessentials.blocks.EssentialButton;
-import com.zekra.bareessentials.blocks.EssentialCrystal;
-import com.zekra.bareessentials.blocks.EssentialDoor;
-import com.zekra.bareessentials.blocks.EssentialGemstoneBlock;
-import com.zekra.bareessentials.blocks.EssentialOre;
-import com.zekra.bareessentials.blocks.EssentialPressurePlate;
-import com.zekra.bareessentials.blocks.EssentialSapling;
-import com.zekra.bareessentials.blocks.EssentialStairs;
-import com.zekra.bareessentials.blocks.EssentialTrapDoor;
-import com.zekra.bareessentials.blocks.ModBlocks;
-import com.zekra.bareessentials.blocks.WaxBlock;
 import com.zekra.bareessentials.blocks.trees.BanksiaTree;
 import com.zekra.bareessentials.blocks.trees.CherryBlossomTree;
 import com.zekra.bareessentials.blocks.trees.EucalyptusTree;
@@ -177,7 +167,7 @@ public class BareEssentials {
 				ModBlocks.TIGERS_EYE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "tigers_eye_block"),
 				ModBlocks.TURQUOISE_BLOCK = new EssentialGemstoneBlock().setRegistryName(MOD_ID, "turquoise_block"),
 				
-				// Wax
+				// Wax Blocks
 				ModBlocks.WAX_BLOCK_BLACK = new WaxBlock().setRegistryName(MOD_ID, "wax_block_black"),
 				ModBlocks.WAX_BLOCK_BLUE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_blue"),
 				ModBlocks.WAX_BLOCK_BROWN = new WaxBlock().setRegistryName(MOD_ID, "wax_block_brown"),
@@ -195,8 +185,27 @@ public class BareEssentials {
 				ModBlocks.WAX_BLOCK_RED = new WaxBlock().setRegistryName(MOD_ID, "wax_block_red"),
 				ModBlocks.WAX_BLOCK_WHITE = new WaxBlock().setRegistryName(MOD_ID, "wax_block_white"),
 				ModBlocks.WAX_BLOCK_YELLOW = new WaxBlock().setRegistryName(MOD_ID, "wax_block_yellow"),
+
+				// Wax Sheets
+				ModBlocks.WAX_SHEET_BLACK = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_black"),
+				ModBlocks.WAX_SHEET_BLUE = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_blue"),
+				ModBlocks.WAX_SHEET_BROWN = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_brown"),
+				ModBlocks.WAX_SHEET_CREAM = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_cream"),
+				ModBlocks.WAX_SHEET_CYAN = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_cyan"),
+				ModBlocks.WAX_SHEET_GRAY = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_gray"),
+				ModBlocks.WAX_SHEET_GREEN = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_green"),
+				ModBlocks.WAX_SHEET_LIGHT_BLUE = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_light_blue"),
+				ModBlocks.WAX_SHEET_LIGHT_GRAY = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_light_gray"),
+				ModBlocks.WAX_SHEET_LIME = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_lime"),
+				ModBlocks.WAX_SHEET_MAGENTA = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_magenta"),
+				ModBlocks.WAX_SHEET_ORANGE = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_orange"),
+				ModBlocks.WAX_SHEET_PINK = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_pink"),
+				ModBlocks.WAX_SHEET_PURPLE = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_purple"),
+				ModBlocks.WAX_SHEET_RED = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_red"),
+				ModBlocks.WAX_SHEET_WHITE = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_white"),
+				ModBlocks.WAX_SHEET_YELLOW = new WaxSheet().setRegistryName(MOD_ID, "wax_sheet_yellow"),
 				
-				// Crystal
+				// Crystals
 				ModBlocks.BORNITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "bornite_crystal"),
 				ModBlocks.CASSITERITE_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cassiterite_crystal"),
 				ModBlocks.CINNABAR_CRYSTAL = new EssentialCrystal().setRegistryName(MOD_ID, "cinnabar_crystal"),
@@ -463,7 +472,26 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.WAX_BLOCK_RED, properties).setRegistryName("wax_block_red"),
 				new BlockItem(ModBlocks.WAX_BLOCK_WHITE, properties).setRegistryName("wax_block_white"),
 				new BlockItem(ModBlocks.WAX_BLOCK_YELLOW, properties).setRegistryName("wax_block_yellow"),
-				
+
+				// Wax Sheets
+				new BlockItem(ModBlocks.WAX_SHEET_BLACK, properties).setRegistryName("wax_sheet_black"),
+				new BlockItem(ModBlocks.WAX_SHEET_BLUE, properties).setRegistryName("wax_sheet_blue"),
+				new BlockItem(ModBlocks.WAX_SHEET_BROWN, properties).setRegistryName("wax_sheet_brown"),
+				new BlockItem(ModBlocks.WAX_SHEET_CREAM, properties).setRegistryName("wax_sheet_cream"),
+				new BlockItem(ModBlocks.WAX_SHEET_CYAN, properties).setRegistryName("wax_sheet_cyan"),
+				new BlockItem(ModBlocks.WAX_SHEET_GRAY, properties).setRegistryName("wax_sheet_gray"),
+				new BlockItem(ModBlocks.WAX_SHEET_GREEN, properties).setRegistryName("wax_sheet_green"),
+				new BlockItem(ModBlocks.WAX_SHEET_LIGHT_BLUE, properties).setRegistryName("wax_sheet_light_blue"),
+				new BlockItem(ModBlocks.WAX_SHEET_LIGHT_GRAY, properties).setRegistryName("wax_sheet_light_gray"),
+				new BlockItem(ModBlocks.WAX_SHEET_LIME, properties).setRegistryName("wax_sheet_lime"),
+				new BlockItem(ModBlocks.WAX_SHEET_MAGENTA, properties).setRegistryName("wax_sheet_magenta"),
+				new BlockItem(ModBlocks.WAX_SHEET_ORANGE, properties).setRegistryName("wax_sheet_orange"),
+				new BlockItem(ModBlocks.WAX_SHEET_PINK, properties).setRegistryName("wax_sheet_pink"),
+				new BlockItem(ModBlocks.WAX_SHEET_PURPLE, properties).setRegistryName("wax_sheet_purple"),
+				new BlockItem(ModBlocks.WAX_SHEET_RED, properties).setRegistryName("wax_sheet_red"),
+				new BlockItem(ModBlocks.WAX_SHEET_WHITE, properties).setRegistryName("wax_sheet_white"),
+				new BlockItem(ModBlocks.WAX_SHEET_YELLOW, properties).setRegistryName("wax_sheet_yellow"),
+
 				// Wax Flakes
 				ModItems.WAX_FLAKE_BLACK = (WaxFlake) new WaxFlake(properties).setRegistryName("wax_flake_black"),
 				ModItems.WAX_FLAKE_BLUE = (WaxFlake) new WaxFlake(properties).setRegistryName("wax_flake_blue"),
@@ -619,7 +647,7 @@ public class BareEssentials {
 		@SubscribeEvent
 		public static void registerTilEntities(final RegistryEvent.Register<TileEntityType<?>> event)
 		{
-			//event.getRegistry().register(TileEntityType.Builder.create(EssentialSignTileEntity::new, ModBlocks.BANKSIA_SIGN).build(null).setRegistryName("banksia_sign"));
+
 		}
 		 
 		@SubscribeEvent
@@ -631,13 +659,6 @@ public class BareEssentials {
 			);
 		}
 
-		/*
-		@SubscribeEvent
-		public static void onModelRegister(ModelRegistryEvent event)
-		{
-			LOGGER.debug("Hello: Models Registered");
-		}
-		*/
 		
 		@SubscribeEvent
 		public static void onModelBakeEvent(ModelBakeEvent event) {

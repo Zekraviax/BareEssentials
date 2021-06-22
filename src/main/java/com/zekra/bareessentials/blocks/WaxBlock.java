@@ -19,7 +19,7 @@ public class WaxBlock extends Block {
 				.harvestTool(ToolType.PICKAXE)
 				.harvestLevel(0));
 	}
-	
+
 	// Detect any "heat sources" when placed next to this
 	public void neighborChanged(BlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
 		if (worldIn.getBlockState(fromPos) == Blocks.MAGMA_BLOCK.getDefaultState() ||
@@ -31,10 +31,10 @@ public class WaxBlock extends Block {
 				worldIn.getBlockState(fromPos) == Blocks.LANTERN.getDefaultState() ||
 				// Campfires need to check for a special state/multiple states
 				worldIn.getBlockState(fromPos) == Blocks.CAMPFIRE.getDefaultState()) {
-			
+
 			//System.out.println("Hello: Found a neighbouring heat source.");
 			//System.out.println("Hello: Wax block is: " + state.toString());
-			
+
 			// Switch statements don't work on BlockState variables
 			if (state == ModBlocks.WAX_BLOCK_BLACK.getDefaultState()) {
 				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_BLACK.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
@@ -74,12 +74,15 @@ public class WaxBlock extends Block {
 				Block.replaceBlock(this.getDefaultState(), ModBlocks.LIQUID_WAX_BLOCK_WHITE.getDefaultState(), worldIn, pos, Constants.BlockFlags.DEFAULT_AND_RERENDER);
 			}
 		}
-		
+
 		/*
-		else 
+		else
 		{
 			System.out.println("Hello: Neighbour is a: " + worldIn.getBlockState(fromPos).toString());
 		}
 		*/
 	}
 }
+
+
+
