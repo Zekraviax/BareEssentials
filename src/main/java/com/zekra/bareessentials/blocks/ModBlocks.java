@@ -235,6 +235,23 @@ public class ModBlocks {
 	public static Block HOLLY_WOOD;
 	public static Block STRIPPED_HOLLY_LOG;
 	public static Block STRIPPED_HOLLY_WOOD;
+	// Rainbow Eucalyptus
+	public static Block RAINBOW_EUCALYPTUS_BUTTON;
+	public static Block RAINBOW_EUCALYPTUS_DOOR;
+	public static Block RAINBOW_EUCALYPTUS_FENCE;
+	public static Block RAINBOW_EUCALYPTUS_FENCE_GATE;
+	public static Block RAINBOW_EUCALYPTUS_LEAVES;
+	public static Block RAINBOW_EUCALYPTUS_LOG;
+	public static Block RAINBOW_EUCALYPTUS_PLANKS;
+	public static Block RAINBOW_EUCALYPTUS_PRESSURE_PLATE;
+	public static Block RAINBOW_EUCALYPTUS_SAPLING;
+	//public static Block RAINBOW_EUCALYPTUS_SIGN;
+	public static Block RAINBOW_EUCALYPTUS_SLAB;
+	public static Block RAINBOW_EUCALYPTUS_STAIRS;
+	public static Block RAINBOW_EUCALYPTUS_TRAPDOOR;
+	public static Block RAINBOW_EUCALYPTUS_WOOD;
+	public static Block STRIPPED_RAINBOW_EUCALYPTUS_LOG;
+	public static Block STRIPPED_RAINBOW_EUCALYPTUS_WOOD;
 	// Wattle
 	public static Block WATTLE_BUTTON;
 	public static Block WATTLE_DOOR;

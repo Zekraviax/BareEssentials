@@ -6,6 +6,7 @@
 	"bareessentials:eucalyptus_fence",
 	"bareessentials:gum_fence",
 	"bareessentials:holly_fence",
+    "bareessentials:rainbow_eucalyptus_fence",
     "bareessentials:wattle_fence"
   ]
 }

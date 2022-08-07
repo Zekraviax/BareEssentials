@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "bareessentials:block/rainbow_eucalyptus_sapling"
+    }
+}

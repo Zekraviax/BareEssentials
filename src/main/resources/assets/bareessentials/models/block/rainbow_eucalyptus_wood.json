@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "bareessentials:block/rainbow_eucalyptus_log",
+        "side": "bareessentials:block/rainbow_eucalyptus_log"
+    }
+}

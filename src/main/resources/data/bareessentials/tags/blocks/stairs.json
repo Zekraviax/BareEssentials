@@ -2,9 +2,11 @@
   "replace": false,
   "values": [
     "bareessentials:banksia_stairs",
-	"bareessentials:cherry_blossom_stairs",
-	"bareessentials:eucalyptus_stairs",
-	"bareessentials:gum_stairs",
-	"bareessentials:holly_stairs"
+    "bareessentials:cherry_blossom_stairs",
+    "bareessentials:eucalyptus_stairs",
+    "bareessentials:gum_stairs",
+    "bareessentials:holly_stairs",
+    "bareessentials:rainbow_eucalyptus_stairs",
+    "bareessentials:wattle_stairs"
   ]
 }
