@@ -235,4 +235,21 @@ public class ModBlocks {
 	public static Block HOLLY_WOOD;
 	public static Block STRIPPED_HOLLY_LOG;
 	public static Block STRIPPED_HOLLY_WOOD;
+	// Wattle
+	public static Block WATTLE_BUTTON;
+	public static Block WATTLE_DOOR;
+	public static Block WATTLE_FENCE;
+	public static Block WATTLE_FENCE_GATE;
+	public static Block WATTLE_LEAVES;
+	public static Block WATTLE_LOG;
+	public static Block WATTLE_PLANKS;
+	public static Block WATTLE_PRESSURE_PLATE;
+	public static Block WATTLE_SAPLING;
+	//public static Block HOLLY_SIGN;
+	public static Block WATTLE_SLAB;
+	public static Block WATTLE_STAIRS;
+	public static Block WATTLE_TRAPDOOR;
+	public static Block WATTLE_WOOD;
+	public static Block STRIPPED_WATTLE_LOG;
+	public static Block STRIPPED_WATTLE_WOOD;
 }

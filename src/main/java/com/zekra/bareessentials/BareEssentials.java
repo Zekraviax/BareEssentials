@@ -1,16 +1,12 @@
 package com.zekra.bareessentials;
 
 import com.zekra.bareessentials.blocks.*;
+import com.zekra.bareessentials.blocks.trees.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.zekra.bareessentials.biomes.EssentialBiomes;
 import com.zekra.bareessentials.biomes.OutbackTest;
-import com.zekra.bareessentials.blocks.trees.BanksiaTree;
-import com.zekra.bareessentials.blocks.trees.CherryBlossomTree;
-import com.zekra.bareessentials.blocks.trees.EucalyptusTree;
-import com.zekra.bareessentials.blocks.trees.GumTree;
-import com.zekra.bareessentials.blocks.trees.HollyTree;
 import com.zekra.bareessentials.fluid.LiquidRegistry;
 import com.zekra.bareessentials.items.EssentialDoorItem;
 import com.zekra.bareessentials.items.EssentialGemstone;
@@ -291,7 +287,7 @@ public class BareEssentials {
 				ModBlocks.GUM_WOOD = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("gum_wood"),
 				ModBlocks.STRIPPED_GUM_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_gum_log"),
 				ModBlocks.STRIPPED_GUM_WOOD = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("stripped_gum_wood"),
-				// Gum
+				// Holly
 				ModBlocks.HOLLY_BUTTON = new EssentialButton(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().hardnessAndResistance(0.5F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "holly_button"),
 				ModBlocks.HOLLY_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "holly_door"),
 				ModBlocks.HOLLY_FENCE = new FenceBlock((Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))).setRegistryName(MOD_ID, "holly_fence"),
@@ -307,7 +303,24 @@ public class BareEssentials {
 				ModBlocks.HOLLY_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "holly_trapdoor"),
 				ModBlocks.HOLLY_WOOD = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("holly_wood"),
 				ModBlocks.STRIPPED_HOLLY_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_holly_log"),
-				ModBlocks.STRIPPED_HOLLY_WOOD = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_holly_wood")
+				ModBlocks.STRIPPED_HOLLY_WOOD = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_holly_wood"),
+				// Wattle
+				ModBlocks.WATTLE_BUTTON = new EssentialButton(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().hardnessAndResistance(0.5F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_button"),
+				ModBlocks.WATTLE_DOOR = new EssentialDoor().setRegistryName(MOD_ID, "wattle_door"),
+				ModBlocks.WATTLE_FENCE = new FenceBlock((Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD))).setRegistryName(MOD_ID, "wattle_fence"),
+				ModBlocks.WATTLE_FENCE_GATE = new FenceGateBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_fence_gate"),
+				ModBlocks.WATTLE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(MOD_ID, "wattle_leaves"),
+				ModBlocks.WATTLE_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(4.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_log"),
+				ModBlocks.WATTLE_PLANKS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_planks"),
+				ModBlocks.WATTLE_PRESSURE_PLATE = new EssentialPressurePlate(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.create(Material.WOOD, MaterialColor.BROWN).doesNotBlockMovement().hardnessAndResistance(0.5F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_pressure_plate"),
+				ModBlocks.WATTLE_SAPLING = new EssentialSapling(new WattleTree(), Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.f).sound(SoundType.PLANT)).setRegistryName(MOD_ID, "wattle_sapling"),
+				//ModBlocks.WATTLE_SIGN = new StandingSignBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).doesNotBlockMovement().hardnessAndResistance(1.0F).sound(SoundType.WOOD)).setRegistryName("wattle_sign"),
+				ModBlocks.WATTLE_SLAB = new SlabBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "wattle_slab"),
+				ModBlocks.WATTLE_STAIRS = new EssentialStairs(ModBlocks.WATTLE_PLANKS.getDefaultState(), Block.Properties.from(ModBlocks.WATTLE_PLANKS)).setRegistryName(MOD_ID, "wattle_stairs"),
+				ModBlocks.WATTLE_TRAPDOOR = new EssentialTrapDoor().setRegistryName(MOD_ID, "wattle_trapdoor"),
+				ModBlocks.WATTLE_WOOD = new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName("wattle_wood"),
+				ModBlocks.STRIPPED_WATTLE_LOG = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_wattle_log"),
+				ModBlocks.STRIPPED_WATTLE_WOOD = new LogBlock(MaterialColor.BROWN, Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(MOD_ID, "stripped_wattle_wood")
 			);
 		}
 	
@@ -613,6 +626,23 @@ public class BareEssentials {
 				new BlockItem(ModBlocks.HOLLY_WOOD, properties).setRegistryName("holly_wood"),
 				new BlockItem(ModBlocks.STRIPPED_HOLLY_LOG, properties).setRegistryName("stripped_holly_log"),
 				new BlockItem(ModBlocks.STRIPPED_HOLLY_WOOD, properties).setRegistryName("stripped_holly_wood"),
+				// Wattle
+				new BlockItem(ModBlocks.WATTLE_BUTTON, properties).setRegistryName("wattle_button"),
+				new EssentialDoorItem(ModBlocks.WATTLE_DOOR, properties).setRegistryName("wattle_door"),
+				new BlockItem(ModBlocks.WATTLE_FENCE, properties).setRegistryName("wattle_fence"),
+				new BlockItem(ModBlocks.WATTLE_FENCE_GATE, properties).setRegistryName("wattle_fence_gate"),
+				new BlockItem(ModBlocks.WATTLE_LEAVES, properties).setRegistryName("wattle_leaves"),
+				new BlockItem(ModBlocks.WATTLE_LOG, properties).setRegistryName("wattle_log"),
+				new BlockItem(ModBlocks.WATTLE_PLANKS, properties).setRegistryName("wattle_planks"),
+				new BlockItem(ModBlocks.WATTLE_PRESSURE_PLATE, properties).setRegistryName("wattle_pressure_plate"),
+				new BlockItem(ModBlocks.WATTLE_SAPLING, properties).setRegistryName("wattle_sapling"),
+				//new BlockItem(ModBlocks.WATTLE_SIGN, properties).setRegistryName("wattle_sign"),
+				new BlockItem(ModBlocks.WATTLE_SLAB, properties).setRegistryName("wattle_slab"),
+				new BlockItem(ModBlocks.WATTLE_STAIRS, properties).setRegistryName("wattle_stairs"),
+				new BlockItem(ModBlocks.WATTLE_TRAPDOOR, properties).setRegistryName("wattle_trapdoor"),
+				new BlockItem(ModBlocks.WATTLE_WOOD, properties).setRegistryName("wattle_wood"),
+				new BlockItem(ModBlocks.STRIPPED_WATTLE_LOG, properties).setRegistryName("stripped_wattle_log"),
+				new BlockItem(ModBlocks.STRIPPED_WATTLE_WOOD, properties).setRegistryName("stripped_wattle_wood"),
 				
 				// Knives
 				ModItems.STONE_KNIFE =  (EssentialKnife) new EssentialKnife(ItemTier.STONE, 1, 10.f, properties).setRegistryName("stone_knife"),

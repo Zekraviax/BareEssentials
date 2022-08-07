@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "bareessentials:block/wattle_slab" },
+        "type=top": { "model": "bareessentials:block/wattle_slab_top" },
+        "type=double": { "model": "bareessentials:block/wattle_planks" }
+    }
+}

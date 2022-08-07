@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "bareessentials:block/wattle_log_top",
+        "side": "bareessentials:block/wattle_log"
+    }
+}

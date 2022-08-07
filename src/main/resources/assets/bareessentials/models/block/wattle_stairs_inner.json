@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "bareessentials:block/wattle_planks",
+        "top": "bareessentials:block/wattle_planks",
+        "side": "bareessentials:block/wattle_planks"
+    }
+}

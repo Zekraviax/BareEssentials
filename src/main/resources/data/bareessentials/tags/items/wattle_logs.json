@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bareessentials:wattle_log",
+    "bareessentials:wattle_wood",
+    "bareessentials:stripped_wattle_log",
+    "bareessentials:stripped_wattle_wood"
+  ]
+}

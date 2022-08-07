@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "bareessentials:block/stripped_wattle_log" },
+        "axis=z":   { "model": "bareessentials:block/stripped_wattle_log", "x": 90 },
+        "axis=x":   { "model": "bareessentials:block/stripped_wattle_log", "x": 90, "y": 90 }
+    }
+}
