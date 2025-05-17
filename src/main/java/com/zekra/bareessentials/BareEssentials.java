@@ -85,6 +85,7 @@ public class BareEssentials {
 	
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class RegistryEvents {
+
 				
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event)
